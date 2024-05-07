@@ -1,0 +1,52 @@
+.app-container{
+    height: 100vh;
+    width: 100vw;
+    background-color : white;
+}
+
+/* primary header */
+.primary-header-container{
+    height: 55px;
+    background-color: var(--c-primary)
+}
+.primary-header{
+    height: 100%;
+    padding: 0 30px;
+    gap: 65px;
+}
+
+.logo-icon{
+    width: 34px;
+    height: 34px;
+}
+
+.logo-text{
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--c-white-100);
+    letter-spacing: 0.12rem;
+}
+
+.search-bar{
+    width: 370px;
+    background-color: var(--c-blue-100);
+    padding: 10px 10px 10px 35px;
+    border: 1px solid rgba(81, 83, 101, 0.28);
+    border-radius: 6px;
+    outline: none;
+    transition: border 800ms;
+}
+
+
+.search-icon {
+    top: 9px;
+    left: 11px;
+}
+
+.header-icons-container{
+    margin-left: auto;
+}
+
+.mail-icon{
+    color: var(--c-grey)
+}

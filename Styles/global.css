@@ -1,0 +1,27 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	color: var(--c-grey);
+	background-color: var(--c-primary);
+	font-family: var(--font-regular);
+	line-height: 1.4;
+}
+
+ul li { list-style: none; }
+a { text-decoration: none; }
+a:hover { cursor: pointer; }
+
+::placeholder{
+	color: var(--c-grey);
+}
+:focus{
+	color: #515365;
+	border: 1px solid var(--c-grey);
+}
