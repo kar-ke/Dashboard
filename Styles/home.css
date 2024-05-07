@@ -45,8 +45,16 @@
 
 .header-icons-container{
     margin-left: auto;
+    gap: 18px;
 }
 
 .mail-icon{
     color: var(--c-grey)
+}
+
+.profile-picture{
+    border-radius: 4px;
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
 }
