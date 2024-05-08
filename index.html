@@ -33,7 +33,7 @@
 					<ul class="header-icons-container">
 						<!-- countries selector  -->
 						<li>
-							<button class="btn"><img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country"></button>
+							<button class="btn" onclick=country_dropdown_handler()><img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country"></button>
 							<div class="countries-dropdown">
 								<a href="#" class="country-list">
 									<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="country-icons">
@@ -55,7 +55,7 @@
 						</li>
 						<!-- mail to user selector  -->
 						<li>
-							<button class="btn"><i class='mail-to-icon bx bx-envelope'></i></button>
+							<button class="btn" onclick=mail_dropdown_handler()><i class='mail-to-icon bx bx-envelope'></i></button>
 							<div class="mail-to-dropdown">
 								<a href="#" class="mail-to-user-list">
 									<div>
@@ -107,5 +107,7 @@
 				
 			</div>
 		</div>
+
+	<script src="./Scripts/Script.js"></script>
 	</body>
 </html>

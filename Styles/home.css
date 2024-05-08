@@ -78,6 +78,7 @@
     position: absolute;
     left: -70px;
     top: 45px;
+    transition: position 2s;
     visibility: hidden;
 }
 
@@ -118,6 +119,7 @@
     right:-7px;
     visibility: hidden;
 }
+
 
 .mail-to-user-list{
     display: flex;
