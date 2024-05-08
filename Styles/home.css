@@ -1,7 +1,6 @@
 .app-container{
     height: 100vh;
     width: 100vw;
-    background-color : white;
 }
 
 /* primary header */
@@ -10,9 +9,16 @@
     background-color: var(--c-primary)
 }
 .primary-header{
+    display: flex;
+    align-items: center;
     height: 100%;
     padding: 0 30px;
     gap: 65px;
+}
+
+.logo-container{
+    display: flex;
+    gap: 10px;
 }
 
 .logo-icon{
@@ -27,34 +33,152 @@
     letter-spacing: 0.12rem;
 }
 
+.search-bar-container{
+    position: relative;
+}
+
 .search-bar{
     width: 370px;
-    background-color: var(--c-blue-100);
+    background-color: var(--c-blue-200);
     padding: 10px 10px 10px 35px;
-    border: 1px solid rgba(81, 83, 101, 0.28);
+    border: 1px solid rgba(53, 55, 68, 0.28);
     border-radius: 6px;
-    outline: none;
-    transition: border 800ms;
 }
-
 
 .search-icon {
-    top: 9px;
+    position: absolute;
     left: 11px;
+    top: 9px;
 }
+
 
 .header-icons-container{
+    display: flex;
+    align-items: center;
     margin-left: auto;
     gap: 18px;
+    position: relative;
 }
 
-.mail-icon{
-    color: var(--c-grey)
+
+/* country icon and dropdown  */
+.selected-country{
+    width: 20px;
+    height: 20px;
 }
 
+.countries-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 150px;
+    background-color: var(--c-blue-100);
+    padding: 15px 28px;
+    border-radius: 5px;
+    position: absolute;
+    left: -70px;
+    top: 45px;
+    visibility: hidden;
+}
+
+.country-list{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--c-grey);
+    font-weight: 500;
+}
+
+.country-list:hover{
+    color: var(--c-white);
+}
+
+.country-icons{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* mail icon and dropdown  */
+.mail-to-icon{
+    font-size: 24px;
+    color: var(--c-grey);
+}
+
+.mail-to-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 210px;
+    padding: 18px 20px;
+    background-color: var(--c-blue-100);
+    border-radius: 5px;
+    position: absolute;
+    top: 45px;
+    right:-7px;
+    visibility: hidden;
+}
+
+.mail-to-user-list{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mail-to-profile-picture{
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 3px solid rgba(81, 83, 101, 0.28);
+    border-radius: 8px;
+}
+
+.user-name{
+    font-size: 16px;
+    color: var(--c-grey);
+}
+.message-title{
+    font-size: 10px;
+    color: var(--c-grey);
+}
+
+.mail-to-user-list:hover .user-name{
+    color: var(--c-white)
+}
+
+/* notification icon */
+.notification-btn{
+    position: relative;
+}
+
+.notification-icon{
+    font-size: 22px;
+    color: var(--c-grey);
+}
+
+.notification-indicator{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #1abc9c;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+/* user profile picture  */
 .profile-picture{
     border-radius: 4px;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     object-fit: cover;
+}
+
+
+.secondary-header-container{
+    height: 55px;
+    background-color: var(--c-secondary)
 }

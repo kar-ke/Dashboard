@@ -7,14 +7,14 @@
 }
 
 body {
-	font-size: 15px;
+	font-size: 14px;
 	color: var(--c-grey);
 	background-color: var(--c-primary);
 	font-family: var(--font-regular);
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
-ul li { list-style: none; }
+ul li { list-style: none; list-style-type: none; }
 a { text-decoration: none; }
 a:hover { cursor: pointer; }
 

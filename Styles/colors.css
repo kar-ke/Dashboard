@@ -1,10 +1,14 @@
 :root{
     /* primary navbar  */
     --c-primary : #060818;
-    --c-blue-100 : #0e1726;
+    --c-secondary : #1a1c2d;
+    --c-blue-100: #1b2e4b;
+    --c-blue-200 : #0e1726;
 
     --c-grey : #888ea8;
 
     --c-white-100 : #e0e6ed;
+    --c-white : #ffffff;
+    
 
 }

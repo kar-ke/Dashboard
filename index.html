@@ -6,46 +6,105 @@
 		<title>Dashboard</title>
 
 		<link rel="stylesheet" href="./Styles/root.css" />
+
+		<!-- icons -->
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	<body>
 		<div class="app-container">
+
 			<!-- primary header  -->
 			<div class="primary-header-container">
-				<header class="primary-header flex align-center ">
+				<header class="primary-header">
 					<div>
-						<a href="#" class="flex g-10">
+						<a href="#" class="logo-container">
 							<img src="./Assets/images/logo.svg" alt="logoIcon" class="logo-icon">
 							<span class="logo-text">CORK</span>
 						</a>
 					</div>
-					<div class="relative">
-						<span><img src="./Assets/icons/search_Icon.svg" alt="search icon" class="search-icon absolute"></span>
+
+					<div class="search-bar-container">
 						<input type="text" placeholder="Search..." class="search-bar">
+						<img src="./Assets/icons/search_Icon.svg" alt="search icon" class="search-icon">
 					</div>
-					<ul class="header-icons-container flex align-center">
+
+					<!-- hader icons  -->
+					<ul class="header-icons-container">
+						<!-- countries selector  -->
 						<li>
-							<a href="#">
-								<img src="./Assets/icons/flags/canada-flag.svg" alt="canada flag">
-							</a>
+							<button class="btn"><img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country"></button>
+							<div class="countries-dropdown">
+								<a href="#" class="country-list">
+									<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="country-icons">
+									<span>German</span>
+								</a>
+								<a href="#" class="country-list">
+									<img src="./Assets/icons/flags/japan-flag.png" alt="japanese flag" class="country-icons">
+									<span>Japanese</span>
+								</a>
+								<a href="#" class="country-list">
+									<img src="./Assets/icons/flags/france-flag.png" alt="french flag" class="country-icons">
+									<span>French</span>
+								</a>
+								<a href="#" class="country-list">
+									<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="country-icons">
+									<span>English</span>
+								</a>
+							</div>
+						</li>
+						<!-- mail to user selector  -->
+						<li>
+							<button class="btn"><i class='mail-to-icon bx bx-envelope'></i></button>
+							<div class="mail-to-dropdown">
+								<a href="#" class="mail-to-user-list">
+									<div>
+										<img src="./Assets/images/prpic1.jpeg" alt="profile picture" class="mail-to-profile-picture">
+									</div>
+									<div>
+										<h5 class="user-name">Kara Young</h5>
+										<p class="message-title">ACCOUNT UPDATE</p>
+									</div>
+								</a>
+								<a href="#" class="mail-to-user-list">
+									<div>
+										<img src="./Assets/images/prpic2.jpeg" alt="profile picture" class="mail-to-profile-picture">
+									</div>
+									<div>
+										<h5 class="user-name">Daisy Anderson</h5>
+										<p class="message-title">ACCOUNT UPDATE</p>
+									</div>
+								</a>
+								<a href="#" class="mail-to-user-list">
+									<div>
+										<img src="./Assets/images/prpic3.jpg" alt="profile picture" class="mail-to-profile-picture">
+									</div>
+									<div>
+										<h5 class="user-name">Oscar Garner</h5>
+										<p class="message-title">ACCOUNT UPDATE</p>
+									</div>
+								</a>
+							</div>
+						</li>
+						<!-- notification icon and dropdown  -->
+						<li> 
+							<button class="btn notification-btn">
+								<i class='notification-icon bx bx-bell'></i>
+								<span class="notification-indicator"></span>
+							</button>
 						</li>
 						<li>
-							<a href="#">
-								<img src="./Assets/icons/mail.svg" alt="mail icon" class="mail-icon"></img>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span></span>
-								<img src="./Assets/icons/notification.svg" alt="notification icon">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./Assets/images/dpimagre.jpg" alt="dpimage" class="profile-picture">
-							</a>
+							<button class="btn">
+								<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture">
+							</button>
 						</li>
 					</ul>
 				</header>
+			</div>
+
+			<!-- secondary header  -->
+			<div class="secondary-header-container">
+				
 			</div>
 		</div>
 	</body>
