@@ -7,7 +7,7 @@
 }
 
 body {
-	font-size: 14px;
+	font-size: 12px;
 	color: var(--c-grey);
 	background-color: var(--c-primary);
 	font-family: var(--font-regular);

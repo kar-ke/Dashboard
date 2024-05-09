@@ -31,7 +31,7 @@
 
 					<!-- hader icons  -->
 					<ul class="header-icons-container">
-						<!-- countries selector  -->
+						<!-- country and select country dropdown -->
 						<li>
 							<button class="btn" onclick=country_dropdown_handler()><img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country"></button>
 							<div class="countries-dropdown">
@@ -53,7 +53,7 @@
 								</a>
 							</div>
 						</li>
-						<!-- mail to user selector  -->
+						<!-- mail to user and mail to dropdoen  -->
 						<li>
 							<button class="btn" onclick=mail_dropdown_handler()><i class='mail-to-icon bx bx-envelope'></i></button>
 							<div class="mail-to-dropdown">
@@ -86,17 +86,78 @@
 								</a>
 							</div>
 						</li>
-						<!-- notification icon and dropdown  -->
+						<!-- notification and notification dropdown  -->
 						<li> 
-							<button class="btn notification-btn">
+							<button onclick=notification_dropdown_handler() class="btn notification-btn">
 								<i class='notification-icon bx bx-bell'></i>
 								<span class="notification-indicator"></span>
 							</button>
+
+							<div class="notifications-dropdown">
+								<a  href="#" class="notification-dropdown-list">
+									<div class="icon-container">
+										<i class='bx bx-server server-icon'></i>
+									</div>
+									<div>
+										<h6 class="notification-title">Server Rebooted</h6>
+										<p class="notification-sub-msg">45 min ago</p>
+									</div>
+									<div class="close-icon">
+										<i class='bx bx-x'></i>
+									</div>
+								</a>
+
+								<a  href="#" class="notification-dropdown-list">
+									<div class="icon-container">
+										<i class='bx bx-heart heart-icon'></i>
+									</div>
+									<div>
+										<h6 class="notification-title">Licence Expiring Soon</h6>
+										<p class="notification-sub-msg">45 min ago</p>
+									</div>
+									<div class="close-icon">
+										<i class='bx bx-x'></i>
+									</div>
+								</a>
+
+								<a  href="#" class="notification-dropdown-list">
+									<div class="icon-container">
+										<i class='bx bx-file file-icon'></i>
+									</div>
+									<div>
+										<h6 class="notification-title">Kelly <br> Portfolio.pdf</h6>
+										<p class="notification-sub-msg">670 kb</p>
+									</div>
+									<div class="close-icon">
+										<i class='bx bxs-check-circle' style='color:#0D9A5D'></i>
+									</div>
+								</a>
+							</div>
 						</li>
+						<!-- profile and profile menu dropdown  -->
 						<li>
-							<button class="btn">
+							<button class="btn" onclick=profile_dropdown_handler()>
 								<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture">
 							</button>
+
+							<div class="profile-dropdown">
+								<a href="#" class="profile-dopdown-list">
+									<i class='bx bx-user profile-icons'></i>
+									<span>Profile</span>
+								</a>
+								<a href="#" class="profile-dopdown-list">
+									<i class='bx bxs-inbox profile-icons'></i>
+									<span>Inbox</span>
+								</a>
+								<a href="#" class="profile-dopdown-list">
+									<i class='bx bx-lock-alt profile-icons'></i>
+									<span>Lock Screen</span>
+								</a>
+								<a href="#" class="profile-dopdown-list">
+									<i class='bx bx-log-out profile-icons'></i>
+									<span>Sign Out</span>
+								</a>
+							</div>
 						</li>
 					</ul>
 				</header>
