@@ -1,7 +1,15 @@
+
+/* global styles  */
 @import url("./font.css");
 @import url("./home.css");
 @import url("./colors.css");
 @import url("./global.css");
 @import url("./flex.css");
 @import url("./button.css");
-@import url("./typography.css");
+
+
+/* primary header styles */
+@import url("./ComponentStyles/primaryHeader.css");
+
+/* secondary header styles  */
+@import url("./ComponentStyles/secondaryHeader.css");
