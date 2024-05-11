@@ -10,11 +10,10 @@
 }
 
 body {
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--c-grey);
-	background-color: var(--c-primary);
 	font-family: var(--font-regular);
-	line-height: 1.4;
+	background-color: var(--c-primary);
 }
 
 ul li { list-style: none; list-style-type: none; }

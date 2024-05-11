@@ -1,7 +1,5 @@
 
-.app-container{
-    height: 105vh;
-    width: 100vw;
+
+.dashboard-section{
+    height: calc(100vh - var(--h-header)*2);
 }
-
-

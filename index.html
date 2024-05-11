@@ -12,43 +12,46 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	<body>
-		<div class="app-container">
-
+		<header>
 			<!-- primary header  -->
-			<div class="primary-header-container">
-				<header class="primary-header">
+				<div class="primary-header">
 					<div>
 						<a href="#" class="logo-container">
-							<img src="./Assets/images/logo.svg" alt="logoIcon" class="logo-icon">
-							<span class="logo-text">CORK</span>
+							<img src="./Assets/images/logo.svg" alt="logoIcon" class="s35">
+							<span>CORK</span>
 						</a>
 					</div>
-
 					<div class="search-bar-container">
 						<input type="text" placeholder="Search..." class="search-bar">
 						<img src="./Assets/icons/search_Icon.svg" alt="search icon" class="search-icon">
 					</div>
-
-					<!-- hader icons  -->
+	
 					<ul class="header-icons-container">
-						<!-- country and select country dropdown -->
 						<li>
-							<button class="btn" onclick=country_dropdown_handler()><img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country"></button>
+							<a href="#">
+								<img src="./Assets/icons/search_Icon.svg" alt="searchIcon" class="search-icon-main">
+							</a>
+						</li>
+						<!-- country and countries dropdown -->
+						<li>
+							<button class="btn" onclick=country_dropdown_handler()>
+								<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country">
+							</button>
 							<div class="countries-dropdown">
 								<a href="#" class="country-list">
-									<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="country-icons">
+									<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="s20">
 									<span>German</span>
 								</a>
 								<a href="#" class="country-list">
-									<img src="./Assets/icons/flags/japan-flag.png" alt="japanese flag" class="country-icons">
+									<img src="./Assets/icons/flags/japan-flag.png" alt="japanese flag" class="s20">
 									<span>Japanese</span>
 								</a>
 								<a href="#" class="country-list">
-									<img src="./Assets/icons/flags/france-flag.png" alt="french flag" class="country-icons">
+									<img src="./Assets/icons/flags/france-flag.png" alt="french flag" class="s20">
 									<span>French</span>
 								</a>
 								<a href="#" class="country-list">
-									<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="country-icons">
+									<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="s20">
 									<span>English</span>
 								</a>
 							</div>
@@ -62,7 +65,7 @@
 										<img src="./Assets/images/prpic1.jpeg" alt="profile picture" class="mail-to-profile-picture">
 									</div>
 									<div>
-										<h5 class="user-name">Kara Young</h5>
+										<span class="user-name">Kara Young</span>
 										<p class="message-title">ACCOUNT UPDATE</p>
 									</div>
 								</a>
@@ -71,7 +74,7 @@
 										<img src="./Assets/images/prpic2.jpeg" alt="profile picture" class="mail-to-profile-picture">
 									</div>
 									<div>
-										<h5 class="user-name">Daisy Anderson</h5>
+										<p class="user-name">Daisy Anderson</p>
 										<p class="message-title">ACCOUNT UPDATE</p>
 									</div>
 								</a>
@@ -80,7 +83,7 @@
 										<img src="./Assets/images/prpic3.jpg" alt="profile picture" class="mail-to-profile-picture">
 									</div>
 									<div>
-										<h5 class="user-name">Oscar Garner</h5>
+										<p class="user-name">Oscar Garner</p>
 										<p class="message-title">ACCOUNT UPDATE</p>
 									</div>
 								</a>
@@ -92,40 +95,40 @@
 								<i class='notification-icon bx bx-bell'></i>
 								<span class="notification-indicator"></span>
 							</button>
-
+	
 							<div class="notifications-dropdown">
 								<a  href="#" class="notification-dropdown-list">
-									<div class="icon-container">
+									<div>
 										<i class='bx bx-server server-icon'></i>
 									</div>
 									<div>
-										<h6 class="notification-title">Server Rebooted</h6>
+										<span class="notification-title">Server Rebooted</span>
 										<p class="notification-sub-msg">45 min ago</p>
 									</div>
 									<div class="close-icon">
 										<i class='bx bx-x'></i>
 									</div>
 								</a>
-
+	
 								<a  href="#" class="notification-dropdown-list">
-									<div class="icon-container">
+									<div>
 										<i class='bx bx-heart heart-icon'></i>
 									</div>
 									<div>
-										<h6 class="notification-title">Licence Expiring Soon</h6>
+										<span class="notification-title">Licence Expiring Soon</span>
 										<p class="notification-sub-msg">45 min ago</p>
 									</div>
 									<div class="close-icon">
 										<i class='bx bx-x'></i>
 									</div>
 								</a>
-
+	
 								<a  href="#" class="notification-dropdown-list">
-									<div class="icon-container">
+									<div>
 										<i class='bx bx-file file-icon'></i>
 									</div>
 									<div>
-										<h6 class="notification-title">Kelly <br> Portfolio.pdf</h6>
+										<span class="notification-title">Kelly <br> Portfolio.pdf</span>
 										<p class="notification-sub-msg">670 kb</p>
 									</div>
 									<div class="close-icon">
@@ -137,48 +140,56 @@
 						<!-- profile and profile menu dropdown  -->
 						<li>
 							<button class="btn" onclick=profile_dropdown_handler()>
-								<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture">
+								<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture s30">
 							</button>
-
+	
 							<div class="profile-dropdown">
 								<a href="#" class="profile-dopdown-list">
-									<i class='bx bx-user profile-icons'></i>
+									<i class='bx bx-user f18'></i>
 									<span>Profile</span>
 								</a>
 								<a href="#" class="profile-dopdown-list">
-									<i class='bx bxs-inbox profile-icons'></i>
+									<i class='bx bxs-inbox f18'></i>
 									<span>Inbox</span>
 								</a>
 								<a href="#" class="profile-dopdown-list">
-									<i class='bx bx-lock-alt profile-icons'></i>
+									<i class='bx bx-lock-alt f18'></i>
 									<span>Lock Screen</span>
 								</a>
 								<a href="#" class="profile-dopdown-list">
-									<i class='bx bx-log-out profile-icons'></i>
+									<i class='bx bx-log-out f18'></i>
 									<span>Sign Out</span>
 								</a>
 							</div>
 						</li>
 					</ul>
-				</header>
-			</div>
-
+				</div>
+	
 			<!-- secondary header  -->
-			<div class="secondary-header-container">
+			<div class="secondary-header">
 				<div class="secondary-header-inner-container">
 					<button class="btn"><i class='bx bx-menu sidebar-menu-button'></i></button>
-					<div class="bredcrumbs-container">
-						<a>Dashboard&nbsp;</a>
-						<span class="selected-bread-crumb">/ &nbsp;Sales</span>
+					<div>
+						<ul class="breadcrumb-items">
+							<li class="breadcrumb-item">
+								<a href="#" class="breadcrumb-link">
+									Dashboard
+								</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="#" class="breadcrumb-link">
+									Sales
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-
+	
 				<div class="settings-container">
 					<button onclick=settings_dropdown_handler() class="settings-button btn">
 						<span>Settings&nbsp;&nbsp;</span>
 						<i class='bx bxs-chevron-down'></i>
 					</button>
-
 					<div>
 						<ul class="settings-dropdown">
 							<li class="settings-dropdown-item">Settings</li>
@@ -191,7 +202,122 @@
 				</div>
 				
 			</div>
-		</div>
+		</header>
+
+
+			<!-- main data container  -->
+			<!-- <div class="dashboard-section">
+					<aside class="app-sidebar-container">
+						<ul class="sidebar-menu-lists">
+							<li>
+								<a class="sidebar-list-item">
+									<i class='bx bx-home-alt sidebar-icons'></i>
+									<span>Dashboard</span>
+									<i class='bx bx-chevron-right' ></i>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-chip sidebar-icons'></i>
+									<span>Apps</span>
+									<i class='bx bx-chevron-right' ></i>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-cube sidebar-icons' ></i>
+									<span>Components</span>
+									<i class='bx bx-chevron-right' ></i>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-bolt-circle sidebar-icons'></i>
+									<span>Elements</span>
+									<i class='bx bx-chevron-right' ></i>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-bullseye sidebar-icons' ></i>
+									<span>Font Icons</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-cog sidebar-icons'></i>
+									<span>Widgets</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-layout sidebar-icons' ></i>
+									<span>Tables</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-outline bx-rotate-180 sidebar-icons' ></i>
+									<span>DataTables</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-notepad bx-rotate-180 sidebar-icons' ></i>
+									<span>Forms</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-user sidebar-icons' ></i>
+									<span>Users</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-file-blank sidebar-icons' ></i>
+									<span>Pages</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-lock-alt sidebar-icons' ></i>
+									<span>Authentication</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-pointer sidebar-icons'></i>
+									<span>Drag and Drop</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-map-alt sidebar-icons' ></i>
+									<span>Maps</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-pie-chart-alt sidebar-icons' ></i>
+									<span>Charts</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-code-alt sidebar-icons'></i>
+									<span>Starter kit</span>
+								</a>
+							</li>
+							<li class="sidebar-list-item">
+								<a>
+									<i class='bx bx-book-alt sidebar-icons'></i>
+									<span>Documentation</span>
+								</a>
+							</li>
+						</ul>
+					</aside>
+			</div> -->
 
 	<script src="./Scripts/Script.js"></script>
 	</body>

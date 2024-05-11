@@ -6,10 +6,10 @@
 @import url("./global.css");
 @import url("./flex.css");
 @import url("./button.css");
+@import url("./responsive.css");
+@import url("./style-bits.css");
 
 
-/* primary header styles */
-@import url("./ComponentStyles/primaryHeader.css");
-
-/* secondary header styles  */
-@import url("./ComponentStyles/secondaryHeader.css");
+/* header styles  */
+@import url("./Components/PrimaryHeader.css");
+@import url("./Components/SecondaryHeader.css");

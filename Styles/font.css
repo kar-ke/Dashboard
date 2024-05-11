@@ -1,36 +1,37 @@
 @font-face {
     font-family: "Nunito-Regular";
     src: url("../Assets/Fonts/Nunito-Regular.ttf");
-    font-display: swap;
-    font-weight: 500;
+    font-weight: 400;
+
 }
 
 @font-face {
     font-family: "Nunito-Medium";
     src: url("../Assets/Fonts/Nunito-Medium.ttf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family:"Nunito-Bold";
-    src: url("../Assets/Fonts/Nunito-Bold.ttf");
-    font-display: swap;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: "Nunito-SemiBold";
     src: url("../Assets/Fonts/Nunito-SemiBold.ttf");
-    font-display: swap;
+    font-weight: 600;
 }
 
+@font-face {
+    font-family:"Nunito-Bold";
+    src: url("../Assets/Fonts/Nunito-Bold.ttf");
+    font-weight: 700;
+}
+
+
 :root{
-    --font-bold:Nunito-Bold,"sans-serif";
-    --font-medium:Nunito-Medium, "sans-serif";
     --font-regular:Nunito-Regular, "sans-serif";
+    --font-medium:Nunito-Medium, "sans-serif";
     --font-semibold:Nunito-SemiBold, "sans-serif";
+    --font-bold:Nunito-Bold,"sans-serif";
 }
 
 .font-regular{ font-family: var(--font-regular); }
 .font-medium{ font-family: var(--font-medium); }
-.font-bold{ font-family: var(--font-bold); }
 .font-semibold{ font-family: var(--font-semibold); }
+.font-bold{ font-family: var(--font-bold); }
