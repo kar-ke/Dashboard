@@ -21,3 +21,13 @@ a { text-decoration: none; }
 a:hover { cursor: pointer; }
 
 
+::-webkit-scrollbar {
+    width: 4px;
+	max-height: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--c-blue-400);
+}
+

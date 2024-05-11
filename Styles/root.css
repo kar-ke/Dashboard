@@ -13,3 +13,6 @@
 /* header styles  */
 @import url("./Components/PrimaryHeader.css");
 @import url("./Components/SecondaryHeader.css");
+
+/* sidebar  */
+@import url("./Components/Sidebar.css");
