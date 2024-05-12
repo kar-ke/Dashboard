@@ -8,6 +8,7 @@
 @import url("./button.css");
 @import url("./responsive.css");
 @import url("./style-bits.css");
+@import url("./animation.css");
 
 
 /* header styles  */
@@ -16,3 +17,6 @@
 
 /* sidebar  */
 @import url("./Components/Sidebar.css");
+
+/* dashboard  */
+@import url("./Components/Dashboard.css");

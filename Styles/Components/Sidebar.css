@@ -15,6 +15,7 @@
     padding: 0 12px;
     color: var(--c-blue-600);
     transition: background-color 0.5s ease;
+    
 }
 
 .active .sidebar-menu-item{
@@ -54,4 +55,39 @@
 .list-item-main{
     display: flex;
     align-items: center;
+}
+
+
+
+
+.sidebar-accordian-items{
+    overflow: hidden;
+}
+
+.sidebar-accordian-items {
+    height: 0;
+    transition: var(--default-trans);
+}
+
+.sidebar-menu-link {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 13px;
+    color: var( --c-blue-600);
+    position: relative;
+    transition: var(--default-trans);
+}
+
+.sidebar-menu-link::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 25px;
+    padding: 2px;
+    border-radius: 100%;
+    background-color: var(--c-blue-500);
+}
+
+.sidebar-menu-link:hover {
+    color: var(--c-blue-500);
 }
