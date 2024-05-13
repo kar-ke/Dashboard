@@ -346,7 +346,7 @@
 								<div class="revenue-card-header">
 									<div class="primary-card-header">
 										<h2 class="card-title">Revenue</h2>
-										<button class="btn">
+										<button class="btn" onclick=chart_dropdown_handler()>
 											<i class='bx bx-dots-horizontal-rounded f20'></i>
 										</button>
 										<ul class="revenue-dropdown-list">
@@ -356,27 +356,42 @@
 										</ul>
 									</div>
 									<div>
-										<p class="card-sub-title">Total Profit <span class="profit-value">&nbsp;&nbsp; $10,840</span></p>
+										<p class="card-sub-title">Total Profit <span class="profit-value">&nbsp; $10,840</span></p>
 									</div>
 								</div>
 								<div class="card-body">
 									<div>
-										<ul>
+										<ul class="card-options-container">
 											<li>
-												<a href="#">Income</a>
+												<a href="#" class="card-option-item">
+													Income
+												</a>
 											</li>
 											<li>
-												<a href="#">Expense</a>
+												<a href="#" class="card-option-item expense">
+													Expense
+												</a>
 											</li>
 										</ul>
 									</div>
+									<div class="area-chart"></div>
+								</div>
+							</div>
 
+							<!-- sales card  -->
+							<div class="sales-card">
+								<div class="sales-card-header">
+									<h2 class="card-title">Sales By Category</h2>
+									<div class="sales-chart"></div>
 								</div>
 							</div>
 							
 						</div>
 					</main>
 		</section>
+
+		<!-- Jquery -->
+		<script src="./Scripts/Jquery.js"></script>
 
 		<!-- ApexCharts  -->
 		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
