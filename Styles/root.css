@@ -1,14 +1,13 @@
 
 /* global styles  */
-@import url("./font.css");
-@import url("./home.css");
-@import url("./colors.css");
 @import url("./global.css");
+@import url("./font.css");
+@import url("./colors.css");
 @import url("./flex.css");
-@import url("./button.css");
-@import url("./responsive.css");
 @import url("./style-bits.css");
+@import url("./button.css");
 @import url("./animation.css");
+@import url("./home.css");
 
 
 /* header styles  */
@@ -20,3 +19,5 @@
 
 /* dashboard  */
 @import url("./Components/Dashboard.css");
+
+@import url("./responsive.css");
