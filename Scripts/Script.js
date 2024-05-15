@@ -40,3 +40,9 @@ function chart_dropdown_handler() {
     const current_state = document.querySelector(".revenue-dropdown-list");
     current_state.style.visibility = (current_state.style.visibility === "visible") ? "hidden" : "visible";
 }
+
+// summary chart dropdown 
+function summary_dropdown_handler() {
+    const current_state = document.querySelector(".summary-dropdown-list");
+    current_state.style.visibility = (current_state.style.visibility === "visible") ? "hidden" : "visible";
+}

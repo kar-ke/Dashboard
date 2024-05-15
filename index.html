@@ -343,8 +343,9 @@
 
 							<!-- revenue card  -->
 							<div class="revenue-card col-xxl-8 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<div class="revenue-card-header">
-									<div class="primary-card-header">
+								<section class="dashboard-card">
+									<div class="revenue-card-header">
+										<div class="primary-card-header">
 										<h2 class="card-title">Revenue</h2>
 										<button class="btn" onclick=chart_dropdown_handler()>
 											<i class='bx bx-dots-horizontal-rounded f20'></i>
@@ -354,12 +355,12 @@
 											<li><a href="#" class="revenue-dropdown-item">Monthly</a></li>
 											<li><a href="#" class="revenue-dropdown-item">Yearly</a></li>
 										</ul>
-									</div>
-									<div>
+										</div>
+										<div>
 										<p class="card-sub-title">Total Profit <span class="profit-value">&nbsp; $10,840</span></p>
+										</div>
 									</div>
-								</div>
-								<div class="card-body">
+									<div class="card-body">
 									<div>
 										<ul class="card-options-container">
 											<li>
@@ -375,15 +376,75 @@
 										</ul>
 									</div>
 									<div class="area-chart"></div>
-								</div>
+									</div>
+								</section>
+								
 							</div>
 
-							<!-- sales card  -->
-							<div class="sales-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<div class="sales-card-header">
+							<!-- sales by category card  -->
+							<div class="sales-by-category-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class="dashboard-card">
+									<div class="sales-by-category-header">
 									<h2 class="card-title">Sales By Category</h2>
-								</div>
-								<div class="sales-chart"></div>
+									</div>
+									<div class="sales-chart"></div>
+								</section>
+								
+							</div>
+
+							<!-- Daily sales card-->
+							<div class="sales-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class=" dashboard-card ">
+									<div class="sales-card-header">
+										<div>
+											<span class="card-title">Daily Sales</span>
+											<p>Go to columns for details</p>
+										</div>
+										<div class="dollar-icon">
+											<i class='bx bx-dollar dollar-icon'></i>
+										</div>
+									</div>
+									<div class="daily-sales-chart">
+									</div>
+								</section>
+							</div>
+
+							<!-- Summary card  -->
+							<div class="sales-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class=" dashboard-card ">
+									<div class="summary-card-header">
+										<div>
+											<span class="card-title">Summary</span>
+										</div>
+										<div class="relative">
+											<button class="btn" onclick=summary_dropdown_handler()>
+												<i class='bx bx-dots-horizontal-rounded f20'></i>
+											</button>
+											<ul class="summary-dropdown-list">
+												<li><a href="#" class="summary-dropdown-item">View Report</a></li>
+												<li><a href="#" class="summary-dropdown-item">Edit Report</a></li>
+												<li><a href="#" class="summary-dropdown-item">Mark as Done</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="summary-card-body">
+										<div>
+											<div>
+												<i class='bx bx-money-withdraw income-icon'></i>
+											</div>
+											<div>
+												<div>
+													<span>Income</span>
+													<span>$92,600</span>
+												</div>
+												<div>
+													<span class="progressed"></span>
+													<span class="remaining-progress"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
 							</div>
 							
 						</div>

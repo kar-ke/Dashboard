@@ -1,5 +1,5 @@
 
 
 .dashboard-section{
-    height: calc(100vh - var(--h-header)*2);
+    display: flex;
 }
