@@ -46,3 +46,9 @@ function summary_dropdown_handler() {
     const current_state = document.querySelector(".summary-dropdown-list");
     current_state.style.visibility = (current_state.style.visibility === "visible") ? "hidden" : "visible";
 }
+
+// Transaction chart dropdown 
+function Transaction_dropdown_handler() {
+    const current_state = document.querySelector(".transaction-dropdown-list");
+    current_state.style.visibility = (current_state.style.visibility === "visible") ? "hidden" : "visible";
+}

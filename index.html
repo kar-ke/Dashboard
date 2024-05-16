@@ -393,7 +393,7 @@
 							</div>
 
 							<!-- Daily sales card-->
-							<div class="sales-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="sales-card col-xxl-4 col-xl-6   col-lg-12 col-md-12 col-sm-12">
 								<section class=" dashboard-card ">
 									<div class="sales-card-header">
 										<div>
@@ -410,7 +410,7 @@
 							</div>
 
 							<!-- Summary card  -->
-							<div class="sales-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="summary-card col-xxl-4 col-xl-6  col-lg-12 col-md-12 col-sm-12">
 								<section class=" dashboard-card ">
 									<div class="summary-card-header">
 										<div>
@@ -428,25 +428,391 @@
 										</div>
 									</div>
 									<div class="summary-card-body">
-										<div>
+										<div class="summary-details ">
 											<div>
 												<i class='bx bx-money-withdraw income-icon'></i>
 											</div>
-											<div>
-												<div>
+											<div class="progress-container">
+												<div class="flex justify-between">
 													<span>Income</span>
 													<span>$92,600</span>
 												</div>
-												<div>
-													<span class="progressed"></span>
-													<span class="remaining-progress"></span>
+												<div class="progress-bar">
+													<div class="progress"></div>
+												</div>
+											</div>
+										</div>
+										<div class="summary-details ">
+											<div>
+												<i class='bx bx-purchase-tag profit-icon'></i>
+											</div>
+											<div class="progress-container">
+												<div class="flex justify-between">
+													<span>Profit</span>
+													<span>$37,515</span>
+												</div>
+												<div class="progress-bar">
+													<div class="profit-progress"></div>
+												</div>
+											</div>
+										</div>
+										<div class="summary-details ">
+											<div>
+												<i class='bx bx-credit-card-alt expense-icon'></i>
+											</div>
+											<div class="progress-container">
+												<div class="flex justify-between">
+													<span>Expenses</span>
+													<span>$55,085</span>
+												</div>
+												<div class="progress-bar">
+													<div class="expense-progress"></div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</section>
 							</div>
+
+
+							<!-- Orders card  -->
+							<div class="orders-card col-xxl-4 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+								<section class=" dashboard-card ">
+									<div class="orders-card-header">
+										<div>
+											<i class='bx bx-cart cart-icon'></i>
+										</div>
+										<div class="header-text">
+											<span class="card-title">3,192</span>
+											<p>Total Orders</p>
+										</div>
+									</div>
+									<div class="orders-chart">
+										
+									</div>
+								</section>
+							</div>
+
+							<!-- Recent Activities card  -->
+							<div class="activities-card col-xxl-4 col-xl-6  col-lg-12 col-md-12 col-sm-12">
+								<section class="dashboard-card ">
+									<div class="card-header">
+										<div>
+											<span class="card-title">Recent Activities</span>
+										</div>
+									</div>
+									<div class="activities-card-body">
+										<div>
+											<ul class="recent-activities-container">
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Updated Server Logs</p>
+														<span class="logged-time">just now</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
+														<span class="logged-time">2 min ago</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li >
+													<a class="flex g-10 align-center">
+														<p class="log-message">Backup Files EOD</p>
+														<span class="logged-time">14:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Collect documents from <strong>Sara</strong></p>
+														<span class="logged-time">16:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
+														<span class="logged-time">17:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Rebooted Server</p>
+														<span class="logged-time">17:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Send contract details to <strong>Freelancer</strong></p>
+														<span class="logged-time">18:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message"><strong>Kelly</strong> want to increase the time of the project</p>
+														<span class="logged-time">19:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Server down for maintainence</p>
+														<span class="logged-time">19:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Malicious link detected</p>
+														<span class="logged-time">20:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Rebooted Server</p>
+														<span class="logged-time">23:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Updated Server Logs</p>
+														<span class="logged-time">just now</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
+														<span class="logged-time">2 min ago</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li >
+													<a class="flex g-10 align-center">
+														<p class="log-message">Backup Files EOD</p>
+														<span class="logged-time">14:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Collect documents from <strong>Sara</strong></p>
+														<span class="logged-time">16:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+												<li>
+													<a class="flex g-10 align-center">
+														<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
+														<span class="logged-time">17:00</span>
+														<span class="activity-status">Pending</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="activities-footer">
+										<span>View All</span>
+										<i class='bx bx-right-arrow-alt f18'></i>
+									</div>
+								</section>
+							</div>
 							
+
+							<!-- TRANSACTION CARD -->
+							<div class="transaction-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class="dashboard-card">
+									<div class="transaction-card-header">
+										<h2 class="card-title">Transaction</h2>
+										<div class="relative">
+											<button class="btn" onclick=Transaction_dropdown_handler()>
+												<i class='bx bx-dots-horizontal-rounded f20'></i>
+											</button>
+											<ul class="transaction-dropdown-list">
+												<li><a href="#" class="transaction-dropdown-item">View Report</a></li>
+												<li><a href="#" class="transaction-dropdown-item">Edit Report</a></li>
+												<li><a href="#" class="transaction-dropdown-item">Mark as Done</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li >
+												<a class="transaction-list">
+													<div class="flex align-center g-10">
+														<div class="list-icon">
+															<i class='bx bx-home-alt f20 home-icon'></i>
+														</div>
+														<div>
+															<h4 class="transaction-title"> Electricity Bill</h4>
+															<small>04 Jan 1:00PM</small>
+														</div>
+													</div>
+													<div>
+														<span class="negative-amount">-$16.44</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="transaction-list">
+													<div class="flex align-center g-10">
+														<div class="list-icon">
+															<p class='blue-icon'>SP</p>
+														</div>
+														<div>
+															<h4 class="transaction-title">Shaun Park</h4>
+															<small>10 Jan 1:00PM</small>
+														</div>
+													</div>
+													<div>
+														<span class="positive-amount">+$36.11</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="transaction-list">
+													<div class="flex align-center g-10">
+														<div class="list-icon">
+															<p class='red-icon'>AD</p>
+														</div>
+														<div>
+															<h4 class="transaction-title">Amy Diaz</h4>
+															<small>31 Jan 1:00PM</small>
+														</div>
+													</div>
+													<div>
+														<span class="positive-amount">+$66.44</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="transaction-list">
+													<div class="flex align-center g-10">
+														<div class="list-icon">
+															<i class='bx bx-home-alt f20 purple-icon'></i>
+														</div>
+														<div>
+															<h4 class="transaction-title">Netflix</h4>
+															<small>02 Feb 1:00PM</small>
+														</div>
+													</div>
+													<div>
+														<span class="negative-amount">-$32.00</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="transaction-list">
+													<div class="flex align-center g-10">
+														<div class="list-icon">
+															<p class='blue-icon'>DA</p>
+														</div>
+														<div>
+															<h4 class="transaction-title">Daisy Anderson</h4>
+															<small>15 Feb 1:00PM</small>
+														</div>
+													</div>
+													<div>
+														<span class="positive-amount">+$10.08</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="transaction-list">
+													<div class="flex align-center g-10">
+														<div class="list-icon">
+															<p class='red-icon'>OG</p>
+														</div>
+														<div>
+															<h4 class="transaction-title">Oscar Garner</h4>
+															<small>20 Feb 1:00PM</small>
+														</div>
+													</div>
+													<div>
+														<span class="negative-amount">-$22.00</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</section>
+							</div>
+
+
+							<!-- Wallet card  -->
+							<div class="wallet-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class="dashboard-card">
+									<div class="wallet-card-header">
+										<div class="flex justify-between">
+											<div class="user-info">
+												<img src="./Assets/images/walletProfile.jpg" alt="User Profile" class="wallet-user-image">
+												<span class="user-name">Alan Green</span>
+											</div>
+											<a href="#">
+												<i class='bx bx-plus card-icon'></i>
+											</a>
+										</div>
+										<div class="wallet-header-text">
+											<h2>Wallet Balance</h2>
+											<span class="f25">$2953</span>
+										</div>
+									</div>
+
+									<div class="wallet-card-body">
+										<div class="transaction-info">
+											<div class="transaction-status-box">
+												<div class="flex justify-between">
+													<span>Received</span>
+													<i class='bx bx-chevron-up uparrow-icon'></i>
+												</div>
+												<div class="transaction-value">
+													<span>$97.99</span>
+												</div>
+											</div>
+
+											<div class="transaction-status-box">
+												<div class="flex justify-between">
+													<span>Spent</span>
+													<i class='bx bx-chevron-down downarrow-icon'></i>
+												</div>
+												<div class=" transaction-value">
+													<span>$53.99</span>
+												</div>
+											</div>
+										</div>
+										<div class="wallet-other-details-container">
+											<div class="mb24">
+												<span class="transaction-status">Pending</span>
+											</div>
+											<div class="flex align-center justify-between mb4">
+												<span class="f13">Netflix</span>
+												<span> $ 13.85</span>
+											</div>
+											<div class="flex align-center justify-between mb4">
+												<span class="f13">BlueHost VPN</span>
+												<span> $ 15.66</span>
+											</div>
+											<div class="flex align-center justify-around mt24">
+												<a href="#" class="details-link">
+													View Details
+												</a>
+												<a href="#" class="pay-link">
+													Pay Now $29.51
+												</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
 						</div>
 					</main>
 		</section>

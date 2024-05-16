@@ -22,7 +22,9 @@
 .g-8 { gap: 8px; }
 .g-10 { gap: 10px; }
 .g-12 { gap: 12px; }
-.g-16 { gap: 15px; }
+.g-14 { gap: 14px; }
+.g-16 { gap: 16px; }
+.g-20 { gap: 20px; }
 
 
 /* position properties  */

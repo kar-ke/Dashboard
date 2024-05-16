@@ -1,6 +1,7 @@
 
 /* icon font size  */
 .f10 { font-size: 10px; }
+.f12 { font-size: 12px; }
 .f13 { font-size: 13px; }
 .f14 { font-size: 14px; }
 .f15 { font-size: 15px; }
@@ -20,3 +21,16 @@
 .s35 { width: 35px; height: 35px; }
 .s50 { width: 50px; height: 50px; }
 
+/* padding  */
+.p0 { padding: 0; }
+.p20 { padding: 20px; }
+
+
+/* margin top  */
+.mt40{ margin-top: 40px;}
+.mt24{ margin-top: 24px;}
+
+
+/* margin bottom  */
+.mb4 { margin-bottom: 4px; }
+.mb24 { margin-bottom: 24px;}
