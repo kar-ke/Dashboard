@@ -1,10 +1,33 @@
 
-function closeAllDropdowns() {
-    const dropdowns = document.querySelectorAll(".countries-dropdown, .mail-to-dropdown, .notifications-dropdown, .profile-dropdown");
-    dropdowns.forEach(dropdown => {
-        dropdown.style.visibility = "hidden";
-    });
-}
+$(document).ready(function(){
+
+    // Active NavBar
+      $('.nav-link').click(function() {
+          $('.nav-link').removeClass('active');
+          $(this).addClass('active');
+          
+          // SideBar Accordion
+          const menu = $('.sidebar-menu-items')
+          const scrollHeight = $(menu)[0].scrollHeight;
+          $(this).next('.sidebar-menu-items').css('height', menu.height() == 0 ? scrollHeight + 'px' : '0px')
+          $(this).find('i').toggleClass('bx-chevron-down bx-chevron-right')
+      });
+  
+      // Close SideBar
+      $('.menu-icon').click(function() {
+          $('.sidebar').toggleClass("sidebar-close");
+          $('.main-container').toggleClass('expand');
+      });
+  
+      // Dropdown
+        $('.btn-action').click(function() {
+            $(this).parents('.dropdown-container').toggleClass('open_dropdown');
+        });
+
+
+})
+
+
 
 
 // Primary header functionalities
@@ -36,10 +59,7 @@ function settings_dropdown_handler() {
 }
 
 // chart dropdown 
-function chart_dropdown_handler() {
-    const current_state = document.querySelector(".revenue-dropdown-list");
-    current_state.style.visibility = (current_state.style.visibility === "visible") ? "hidden" : "visible";
-}
+
 
 // summary chart dropdown 
 function summary_dropdown_handler() {

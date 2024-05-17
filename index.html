@@ -33,28 +33,37 @@
 						</a>
 					</li>
 					<!-- country and countries dropdown -->
-					<li>
-						<button class="btn" onclick="country_dropdown_handler()">
+					<li class="dropdown-container relative">
+						<button class="btn btn-action">
 							<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country" />
 						</button>
-						<div class="countries-dropdown">
-							<a href="#" class="country-list">
-								<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="s20" />
-								<span>German</span>
-							</a>
-							<a href="#" class="country-list">
-								<img src="./Assets/icons/flags/japan-flag.png" alt="japanese flag" class="s20" />
-								<span>Japanese</span>
-							</a>
-							<a href="#" class="country-list">
-								<img src="./Assets/icons/flags/france-flag.png" alt="french flag" class="s20" />
-								<span>French</span>
-							</a>
-							<a href="#" class="country-list">
-								<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="s20" />
-								<span>English</span>
-							</a>
-						</div>
+						
+						<ul class="dropdown-lists arrow-head">
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="s20" />
+									<span>German</span>
+								</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<img src="./Assets/icons/flags/japan-flag.png" alt="japanese flag" class="s20" />
+									<span>Japanese</span>
+								</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<img src="./Assets/icons/flags/france-flag.png" alt="french flag" class="s20" />
+									<span>French</span>
+								</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="s20" />
+									<span>English</span>
+								</a>
+							</li>
+						</ul>
 					</li>
 					<!-- mail to user and mail to dropdoen  -->
 					<li>
@@ -346,18 +355,20 @@
 								<section class="dashboard-card">
 									<div class="revenue-card-header">
 										<div class="primary-card-header">
-										<h2 class="card-title">Revenue</h2>
-										<button class="btn" onclick=chart_dropdown_handler()>
-											<i class='bx bx-dots-horizontal-rounded f20'></i>
-										</button>
-										<ul class="revenue-dropdown-list">
-											<li><a href="#" class="revenue-dropdown-item">Weekly</a></li>
-											<li><a href="#" class="revenue-dropdown-item">Monthly</a></li>
-											<li><a href="#" class="revenue-dropdown-item">Yearly</a></li>
-										</ul>
+											<h2 class="card-title">Revenue</h2>
+											<div class="dropdown-container relative">
+												<button class="btn btn-action">
+													<i class='bx bx-dots-horizontal-rounded f20'></i>
+												</button>
+												<ul class="dropdown-lists">
+													<li class="dropdown-list"><a href="#" class="dropdown-link">Weekly</a></li>
+													<li class="dropdown-list"><a href="#" class="dropdown-link">Monthly</a></li>
+													<li class="dropdown-list"><a href="#" class="dropdown-link">Yearly</a></li>
+												</ul>
+											</div>
 										</div>
 										<div>
-										<p class="card-sub-title">Total Profit <span class="profit-value">&nbsp; $10,840</span></p>
+											<p class="card-sub-title">Total Profit <span class="profit-value">&nbsp; $10,840</span></p>
 										</div>
 									</div>
 									<div class="card-body">
@@ -416,14 +427,14 @@
 										<div>
 											<span class="card-title">Summary</span>
 										</div>
-										<div class="relative">
-											<button class="btn" onclick=summary_dropdown_handler()>
+										<div class="dropdown-container relative">
+											<button class="btn btn-action">
 												<i class='bx bx-dots-horizontal-rounded f20'></i>
 											</button>
-											<ul class="summary-dropdown-list">
-												<li><a href="#" class="summary-dropdown-item">View Report</a></li>
-												<li><a href="#" class="summary-dropdown-item">Edit Report</a></li>
-												<li><a href="#" class="summary-dropdown-item">Mark as Done</a></li>
+											<ul class="dropdown-lists">
+												<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
+												<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
+												<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
 											</ul>
 										</div>
 									</div>
@@ -629,19 +640,19 @@
 							</div>
 							
 
-							<!-- TRANSACTION CARD -->
+							<!-- Transactions card -->
 							<div class="transaction-card col-xxl-4 col-xl-6 col-lg-12 col-md-12 col-sm-12">
 								<section class="dashboard-card">
 									<div class="transaction-card-header">
 										<h2 class="card-title">Transaction</h2>
-										<div class="relative">
-											<button class="btn" onclick=Transaction_dropdown_handler()>
+										<div class="dropdown-container relative">
+											<button class="btn btn-action">
 												<i class='bx bx-dots-horizontal-rounded f20'></i>
 											</button>
-											<ul class="transaction-dropdown-list">
-												<li><a href="#" class="transaction-dropdown-item">View Report</a></li>
-												<li><a href="#" class="transaction-dropdown-item">Edit Report</a></li>
-												<li><a href="#" class="transaction-dropdown-item">Mark as Done</a></li>
+											<ul class="dropdown-lists">
+												<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
+												<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
+												<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
 											</ul>
 										</div>
 									</div>
@@ -815,6 +826,438 @@
 								</section>
 							</div>
 
+
+							<!-- Recent Orders card-->
+							<div class="recent-orders-card col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class="dashboard-card">
+									<div class="recent-orders-card-header mb24">
+										<h2 class="card-title">Recent Orders</h2>
+									</div>
+									<div class="recent-orders-card-body ">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="table-header">
+														<div>
+															<span>Customer</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Product</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Invoice</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Price</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Status</span>
+														</div>
+													</th>
+												</tr>
+			
+											</thead>
+
+											<tbody>
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/images/profile.webp" alt="Avatar" class="customer-avatar">
+															<span>Luke Ivory</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="blue">Headphone</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>#46894</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$56.07</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="label-paid">Paid</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/images/prpic1.jpeg" alt="Avatar" class="customer-avatar">
+															<span>Andy King</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="orange">Nike Sport</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>#76894</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$88.00</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="label-shipped">Shipped</span>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/images/prpic2.jpeg" alt="Avatar" class="customer-avatar">
+															<span>Laurie Fox</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="red">Sunglasses</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span> #66894</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$126.04</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="label-paid">Paid</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/images/prpic3.jpg" alt="Avatar"
+																class="customer-avatar">
+															<span>Ryan Collins</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="orange">Sport</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>#89891</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$108.09</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="label-shipped">Shipped</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/images/walletProfile.jpg" alt="Avatar"class="customer-avatar">
+															<span>Irene Collins</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="blue">Speakers</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>#75844</span>
+														</div>
+													</td>
+													<td class="table-data">
+														$84.00
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="label-pending">Pending</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/images/profile.webp" alt="Avatar"class="customer-avatar">
+															<span>Sonia Shaw</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="red">Watch</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>#76844</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$110.00</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span class="label-paid">Paid</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+							</div>
+
+							<!-- Top selling card-->
+							<div class="top-selling-card col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<section class="dashboard-card">
+									<div class="recent-orders-card-header mb24">
+										<h2 class="card-title">Recent Orders</h2>
+									</div>
+									<div class="recent-orders-card-body ">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="table-header">
+														<div>
+															<span>Product</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Price</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Discount</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Sold</span>
+														</div>
+													</th>
+													<th class="table-header">
+														<div>
+															<span>Source</span>
+														</div>
+													</th>
+												</tr>
+			
+											</thead>
+
+											<tbody>
+												
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/productImages/headphone.jpg" alt="Headphone" class="product-image">
+															<div>
+																<h4 class="product-title">Headphone</h4>
+																<small class="blue">Digital</small>
+															</div>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$168.09</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$60.09</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>170</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div class="red flex g-5">
+															<i class='bx bx-chevrons-right f15'></i>
+															<span>Direct</span>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/productImages/shoe.jpg" alt="Avatar" class="product-image">
+															<div>
+																<h4 class="product-title">Shoes</h4>
+																<small class="orange">Fashion</small>
+															</div>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$108.09</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$47.09</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>130</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div class="blue flex g-5">
+															<i class='bx bx-chevrons-right f15'></i>
+															<span>Google</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/productImages/watch.jpg" alt="watch" class="product-image">
+																<div>
+																	<h4 class="product-title">Watch</h4>
+																	<small class="red">Accessories</small>
+																</div>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$88.00</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$20.00</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>66</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div class="orange flex g-5">
+															<i class='bx bx-chevrons-right f15'></i>
+															<span>Ads</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/productImages/laptop.jpg" alt="laptop" class="product-image">
+															<div>
+																<h4 class="product-title">Laptop</h4>
+																<small class="blue">Digital</small>
+															</div>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$110.00</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$33.00</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>35</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div class="blue flex g-5">
+															<i class='bx bx-chevrons-right f15'></i>
+															<span>Email</span>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td class="table-data">
+														<div class="flex align-center g-10">
+															<img src="./assets/productImages/camera.jpg" alt="camera" class="product-image">
+															<div>
+																<h4 class="product-title">Camera</h4>
+																<small class="blue">Digital</small>
+															</div>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$126.04</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>$26.04</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div>
+															<span>30</span>
+														</div>
+													</td>
+													<td class="table-data">
+														<div class="orange flex g-5">
+															<i class='bx bx-chevrons-right f15'></i>
+															<span>Referral</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+							</div>
+
+
+							
 						</div>
 					</main>
 		</section>

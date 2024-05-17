@@ -49,7 +49,6 @@
     align-items: center;
     gap: 18px;
     margin-left: auto;
-    position: relative;
 }
 
 .search-icon-main{
@@ -65,44 +64,6 @@
     vertical-align: middle;
 }
 
-.countries-dropdown{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 150px;
-    background-color: var(--c-blue-100);
-    padding: 20px 28px;
-    border-radius: 5px;
-    position: absolute;
-    right: 69px;
-    top: 43px;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.countries-dropdown:after{
-    content: "";
-    border-style: solid;
-    border-width: 7px;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--c-blue-100);
-    border-left-color: transparent;
-    position: absolute;
-    top: -13px;
-    right: 65px;
-}
-
-.country-list{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    color: var(--c-grey-100);
-}
-
-.country-list:hover{
-    color: var(--c-white);
-}
 
 /* mail icon and dropdown  */
 .mail-to-icon{

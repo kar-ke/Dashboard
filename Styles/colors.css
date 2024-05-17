@@ -28,9 +28,17 @@
 
     
     /* action colors  */
-    --c-red: #E64F59;
+    --c-red: #E7515A;
     --c-green : #009688;
     --c-blue : #24C8D8;
     --c-neonblue: #4361EE;
 
+
+    --c-shadow-white:#292c49;
+
 }
+
+
+.blue { color: #4361EE}
+.orange { color: #E2A03F}
+.red { color: #E7515A}

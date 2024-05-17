@@ -35,7 +35,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     margin-bottom: 15px;
 }
 
@@ -45,24 +44,6 @@
     color: var(--c-white-100)
 }
 
-.revenue-dropdown-list{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 150px;
-    background-color: var(--c-blue-100);
-    border-radius: 5px;
-    padding :18px 25px;
-    position: absolute;
-    top: 35px;
-    right: 0;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.revenue-dropdown-item{
-    color: var(--c-grey-100);
-}
 
 .card-sub-title{
     font-size: 18px;
@@ -144,25 +125,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 42px;
-}
-
-.summary-dropdown-list{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 150px;
-    background-color: var(--c-blue-100);
-    border-radius: 5px;
-    padding :18px 25px;
-    position: absolute;
-    top: 32px;
-    right: 0;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.summary-dropdown-item{
-    color: var(--c-grey-100);
 }
 
 .summary-details{
@@ -570,4 +532,110 @@
     color: var(--c-green);
     border-radius: 6px;
     background-color: #112C49;
+}
+
+
+/* recent orders card  */
+.recent-orders-card{
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 0 15px 25px;
+}
+
+.recent-orders-card-body{
+    overflow-x: auto;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: scroll;
+}
+
+.recent-orders-card .table .table-header{
+    text-align: left;
+    padding: 10px 15px;
+    color: var(--c-grey-100);
+    font-family: var(--font-semibold);
+    background-color:#191e3a;
+}
+
+.table-header:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.table-header:last-child {
+    border-radius: 0 6px 6px 0 ;
+} 
+
+.customer-avatar{
+    height: 30px;
+    width: 30px;
+    border-radius: 4px
+}
+
+.table .table-data {
+    font-size: 13px;
+    font-family: var(--font-semibold);
+    padding:15px;
+}
+
+
+.label-paid {
+    padding: 3px 8px;
+    color: var(--c-white);
+    border-radius: 6px;
+    background-color: var( --c-green);
+}
+.label-pending {
+    padding: 3px 8px;
+    color: var(--c-white);
+    border-radius: 6px;
+    background-color: var( --c-red);
+}
+.label-shipped {
+    padding: 3px 8px;
+    color: var(--c-white);
+    border-radius: 6px;
+    background-color: var( --c-neonblue);
+}
+
+.recent-orders-card tr:hover{
+    color: var(--c-white-100);
+    transition: var(--default-trans);
+}
+
+/* Top selling products card  */
+.top-selling-card {
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 0 15px 25px;
+}
+
+.product-image{
+    height: 42px;
+    width: 42px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.top-selling-card .table .table-header{
+    text-align: left;
+    padding: 10px 15px;
+    color: var(--c-grey-100);
+    font-family: var(--font-semibold);
+    background-color:#191e3a;
+}
+
+.product-title{
+    color: var(--c-white-100)
+}
+
+.top-selling-card tr:hover{
+    color: var(--c-white-100);
+    transition: var(--fast-trans);
+}
+.top-selling-card tr:hover .product-title{
+    color: var(--c-grey);
+    transition: var(--fast-trans);
 }
