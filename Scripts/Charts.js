@@ -1,28 +1,17 @@
 
- // Revenue chart
-const defaultOptions = {
+// Revenue chart
 
+let revenue_chart_options = {
+    
     chart: {
+        type:"area",
+        height: 280,
         toolbar: {
             show: false
-        },
-
-        height: 280,
+        }
     },
-
     dataLabels: {
         enabled: false
-    }
-
-}
-
-let barOptions  = {
-
-    ...defaultOptions,
-
-    chart :{
-        ...defaultOptions.chart,
-        type:"area"
     },
     tooltip :{
         enabled:true,
@@ -94,15 +83,20 @@ let barOptions  = {
     },
 }
 
-let chart = new ApexCharts(
-    document.querySelector(".area-chart"), barOptions
+let revenue_chart = new ApexCharts(
+    document.querySelector(".area-chart"), revenue_chart_options
 )
 
-chart.render();
+revenue_chart.render();
+
+
+
+
+
 
 // Sales Chart
 
-let salesOptions = {
+let sales_chart_options = {
     
     series: [985, 737, 270],
     labels: ["Others", "Apparel", "Sports"],
@@ -151,10 +145,8 @@ let salesOptions = {
                     value: {
                         show: true,
                         fontSize: "28px",
-                        color: "#bfc9d4",
-                        
+                        color: "#bfc9d4"
                     }
-
                 }
             }
         }
@@ -163,14 +155,19 @@ let salesOptions = {
 }
 
 let sales_chart = new ApexCharts(
-    document.querySelector(".sales-chart"), salesOptions
+    document.querySelector(".sales-chart"), sales_chart_options
 )
 
 sales_chart.render();
 
+
+
+
+
+
 // Daily Sales chart
 
-var options = {
+var daily_sales_chart_options = {
     series: [{
         name: 'Sales',
         data: [44, 55, 41, 67, 22, 43, 21]
@@ -228,10 +225,16 @@ var options = {
     
 };
 
-var daily_sales_chart = new ApexCharts(document.querySelector(".daily-sales-chart"), options);
+var daily_sales_chart = new ApexCharts(document.querySelector(".daily-sales-chart"), daily_sales_chart_options);
+
 daily_sales_chart.render();
 
-// orders chart
+
+
+
+
+
+// Total orders chart
 
 let orders_chart_options  = {
 
@@ -293,7 +296,7 @@ let orders_chart_options  = {
     yaxis: {
         labels :{
             show:false,
-        }// Adjust the value as needed
+        }
     }
 }
 
