@@ -240,7 +240,7 @@ let orders_chart_options  = {
 
     chart :{
         type: "area",
-        height: 200,
+        height: 160,
         toolbar: {
             show: false
         },

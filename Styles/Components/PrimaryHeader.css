@@ -1,11 +1,11 @@
 
 /* primary header styles  */
 .primary-header{
-    height: var(--h-header);
     display: flex;
     align-items: center;
-    padding: 0 1.5rem;
     gap: 65px;
+    height: var(--h-header);
+    padding: 0 1.5rem;
 }
 
 .logo-container{
@@ -18,9 +18,9 @@
 
 .search-bar{
     width: 370px;
-    color: var(--c-grey);
-    background-color: var(--c-blue-200);
     padding: 10px 10px 10px 35px;
+    background-color: var(--c-blue-200);
+    color: var(--c-grey);
     border: 1px solid rgba(53, 55, 68, 0.28);
     border-radius: 6px;
 }
@@ -39,8 +39,8 @@
 
 .search-icon {
     position: absolute;
-    left: 210px;
     top: 18px;
+    left: 210px;
 }
 
 .header-icons-container{
@@ -50,11 +50,6 @@
     margin-left: auto;
 }
 
-.search-icon-main{
-    height: 22px;
-    width: 22px;
-    vertical-align: middle;
-}
 
 /* country icon and dropdown  */
 .country{
@@ -68,13 +63,10 @@
 .mail-to-button{
     font-size: 24px;
     vertical-align: middle;
-    color: var(--c-grey);
 }
 
 .mail-to-profile-picture{
     display: block;
-    width: 40px;
-    height: 40px;
     object-fit: cover;
     border: 3px solid rgba(81, 83, 101, 0.28);
     border-radius: 10px;
@@ -86,7 +78,7 @@
     color: var(--c-grey);
 }
 
-.mail-to-user .dropdown-list:hover .user-name{
+.dropdown-list:hover .user-name{
     color: var(--c-white)
 }
 
@@ -94,15 +86,14 @@
 .notification-icon{
     font-size: 22px;
     vertical-align: middle;
-    color: var(--c-grey);
 }
 
 .notification-indicator{
     display: block;
     width: 5px;
     height: 5px;
-    border-radius: 50%;
     background-color: #1abc9c;
+    border-radius: 50%;
     position: absolute;
     top: 0;
     right: 0;
@@ -113,17 +104,14 @@
     color: var(--c-grey)
 }
 
-
 .server-icon{
     font-size: 28px;
     color: var(--c-green);
 }
-
 .heart-icon{
     font-size: 28px;
     color : var(--c-grey)
 }
-
 .file-icon{
     font-size: 28px;
     color: var(--c-red);
@@ -146,7 +134,7 @@
 /* user icon and dropdown */
 .profile-picture{
     border-radius: 5px;
-    object-fit: cover;
     vertical-align: middle;
+    object-fit: cover;
 }
 

@@ -3,7 +3,6 @@
     --c-primary : #060818;
     --c-secondary : #1a1c2d;
 
-
     --c-white : #ffffff;
     --c-white-100 : #e0e6ed;
     
@@ -24,21 +23,15 @@
     --c-blue-500: #506690;
     --c-blue-600 : #374756;
 
-
-
-    
     /* action colors  */
     --c-red: #E7515A;
     --c-green : #009688;
     --c-blue : #24C8D8;
     --c-neonblue: #4361EE;
-
-
     --c-shadow-white:#292c49;
-
 }
-
 
 .blue { color: #4361EE}
 .orange { color: #E2A03F}
 .red { color: #E7515A}
+.green { color: #009688;}

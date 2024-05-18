@@ -1,5 +1,5 @@
 
-/* icon font size  */
+/* font size  */
 .f10 { font-size: 10px; }
 .f12 { font-size: 12px; }
 .f13 { font-size: 13px; }
@@ -20,6 +20,7 @@
 .s28 { width: 28px; height: 28px; }
 .s30 { width: 30px; height: 30px; }
 .s35 { width: 35px; height: 35px; }
+.s40 { width: 40px; height: 40px; }
 .s50 { width: 50px; height: 50px; }
 
 /* padding  */
@@ -34,4 +35,12 @@
 
 /* margin bottom  */
 .mb4 { margin-bottom: 4px; }
-.mb24 { margin-bottom: 24px;}
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+.mb40 { margin-bottom: 40px; }
+.mb50 { margin-bottom: 50px; }
+
+

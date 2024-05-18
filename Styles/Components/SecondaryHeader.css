@@ -3,47 +3,39 @@
 
 .secondary-header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
-    height: var(--h-header);
     width: 100%;
+    height: var(--h-header);
     padding: 0 1.5rem;
     background-color: var(--c-secondary)
-}
-
-.secondary-header-inner-container{
-    display: flex;
-    align-items: center;
-    gap: 18px;
 }
 
 .sidebar-menu-button{
     vertical-align:middle;
     font-size: 28px;
-    color: var(--c-grey);
-}
-
-.breadcrumb-items{
-    display: flex;
-    gap: 20px;
 }
 
 .breadcrumb-link {
     display: inline-block;
     position: relative;
-    color: var(--c-white-100);
+    color: var(--c-grey);
+}
+
+.active.breadcrumb-link{
+    color: var(--c-white-100)
 }
 
 .breadcrumb-item:not(:last-child) .breadcrumb-link::before {
     content: '';
+    width: 2px;
+    height: 12px;
+    background-color: var(--c-white-100);
     position: absolute;
     top: 4px;
     right: -10px;
-    width: 2px;
-    height: 12px;
     transform: skew(-20deg);
-    background-color: var(--c-white-100);
 }
 
 .settings-button{

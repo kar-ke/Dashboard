@@ -2,6 +2,12 @@
 	--h-header : 50px;
 	--w-sidebar : 220px;
 
+	--h-full : 100%;
+	--w-full : 100%;
+	--br-full : 100%;
+
+	--h-screen : 100vh;
+	--w-screen : 100vw;
 }
 
 * {
@@ -12,9 +18,10 @@
 
 body {
 	font-size: 14px;
-	color: var(--c-grey);
 	font-family: var(--font-regular);
 	background-color: var(--c-primary);
+	color: var(--c-grey);
+	line-height: 1.4;
 }
 
 ul li { list-style: none; list-style-type: none; }

@@ -3,14 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Admin Dashboard for managing users, content and settings" />
+		<meta name="keywords" content="Admin Dashboard" />
+		<meta name="author" content="karthik" />
 		<title>Dashboard</title>
-
-		<link rel="stylesheet" href="./Styles/root.css" />
 
 		<!-- icons -->
 		<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+		<!-- styles  -->
+		<link rel="stylesheet" href="./Styles/root.css" />
+
+		<!-- favicon  -->
+		<link rel="shortcut icon" href="./Assets/images/logo.svg" type="image/x-icon" />
 	</head>
+
 	<body>
 		<header>
 			<!-- primary header  -->
@@ -27,17 +35,11 @@
 				</div>
 
 				<ul class="header-icons-container">
-					<li>
-						<a href="#">
-							<img src="./Assets/icons/search_Icon.svg" alt="searchIcon" class="search-icon-main" />
-						</a>
-					</li>
 					<!-- country and countries dropdown -->
 					<li class="dropdown-container relative">
 						<button class="btn btn-action">
 							<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="country" />
 						</button>
-						
 						<ul class="dropdown-lists arrow-head">
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
@@ -70,11 +72,11 @@
 						<button class="btn btn-action">
 							<i class="mail-to-button bx bx-envelope"></i>
 						</button>
-						<ul class="dropdown-lists arrow-head ">
+						<ul class="dropdown-lists arrow-head">
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<div>
-										<img src="./Assets/images/prpic1.jpeg" alt="profile picture" class="mail-to-profile-picture" />
+										<img src="./Assets/images/prpic1.jpeg" alt="profile picture" class="mail-to-profile-picture s40" />
 									</div>
 									<div>
 										<span class="user-name">Kara Young</span>
@@ -85,7 +87,7 @@
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<div>
-										<img src="./Assets/images/prpic2.jpeg" alt="profile picture" class="mail-to-profile-picture" />
+										<img src="./Assets/images/prpic2.jpeg" alt="profile picture" class="mail-to-profile-picture s40" />
 									</div>
 									<div>
 										<p class="user-name">Daisy Anderson</p>
@@ -96,7 +98,7 @@
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<div>
-										<img src="./Assets/images/prpic3.jpg" alt="profile picture" class="mail-to-profile-picture" />
+										<img src="./Assets/images/prpic3.jpg" alt="profile picture" class="mail-to-profile-picture s40" />
 									</div>
 									<div>
 										<p class="user-name">Oscar Garner</p>
@@ -104,7 +106,6 @@
 									</div>
 								</a>
 							</li>
-							
 						</ul>
 					</li>
 					<!-- notification and notification dropdown  -->
@@ -114,7 +115,7 @@
 							<span class="notification-indicator"></span>
 						</button>
 
-						<ul class="dropdown-lists arrow-head ">
+						<ul class="dropdown-lists arrow-head">
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<div>
@@ -129,7 +130,7 @@
 									</div>
 								</a>
 							</li>
-							
+
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<div>
@@ -142,9 +143,9 @@
 									<div class="close-icon">
 										<i class="bx bx-x"></i>
 									</div>
-								</a>	
+								</a>
 							</li>
-							
+
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<div>
@@ -160,9 +161,8 @@
 									<div class="close-icon">
 										<i class="bx bxs-check-circle" style="color:#0D9A5D"></i>
 									</div>
-								</a>	
+								</a>
 							</li>
-							
 						</ul>
 					</li>
 					<!-- profile and profile menu dropdown  -->
@@ -171,32 +171,31 @@
 							<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture s28" />
 						</button>
 
-						<ul class="dropdown-lists arrow-head ">
+						<ul class="dropdown-lists arrow-head">
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<i class="bx bx-user f18"></i>
 									<span>Profile</span>
-								</a>	
+								</a>
 							</li>
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<i class="bx bxs-inbox f18"></i>
 									<span>Inbox</span>
-								</a>	
+								</a>
 							</li>
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<i class="bx bx-lock-alt f18"></i>
 									<span>Lock Screen</span>
-								</a>	
+								</a>
 							</li>
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<i class="bx bx-log-out f18"></i>
 									<span>Sign Out</span>
-								</a>	
+								</a>
 							</li>
-							
 						</ul>
 					</li>
 				</ul>
@@ -204,17 +203,17 @@
 
 			<!-- secondary header  -->
 			<div class="secondary-header">
-				<div class="secondary-header-inner-container">
+				<div class="flex align-center g20">
 					<button class="btn"><i class="bx bx-menu sidebar-menu-button"></i></button>
 					<div>
-						<ul class="breadcrumb-items">
+						<ul class="flex g20">
 							<li class="breadcrumb-item">
 								<a href="#" class="breadcrumb-link">
 									Dashboard
 								</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#" class="breadcrumb-link">
+								<a href="#" class="active breadcrumb-link">
 									Sales
 								</a>
 							</li>
@@ -227,1063 +226,1052 @@
 						<span>Settings&nbsp;&nbsp;</span>
 						<i class="bx bxs-chevron-down"></i>
 					</button>
-					<ul class="dropdown-lists arrow-head ">
-						<li  class="dropdown-list">
+					<ul class="dropdown-lists arrow-head">
+						<li class="dropdown-list">
 							<a href="#" class="dropdown-link">Settings</a>
 						</li>
-						<li  class="dropdown-list">
+						<li class="dropdown-list">
 							<a href="#" class="dropdown-link">Mail</a>
 						</li>
-						<li  class="dropdown-list">
+						<li class="dropdown-list">
 							<a href="#" class="dropdown-link">Print</a>
 						</li>
-						<li  class="dropdown-list">
+						<li class="dropdown-list">
 							<a href="#" class="dropdown-link">Download</a>
 						</li>
-						<li  class="dropdown-list">
+						<li class="dropdown-list">
 							<a href="#" class="dropdown-link">Share</a>
 						</li>
-						
 					</ul>
 				</div>
 			</div>
 		</header>
 
-		<!-- main data container  -->
-		<section class="dashboard-section">
+		<!-- main dashboard area  -->
+		<section class="flex">
+			<!-- sidebar  -->
+			<aside class="sidebar-container">
+				<ul>
+					<li class="active">
+						<a class="sidebar-menu-item">
+							<i class="bx bx-home-alt sidebar-icons"></i>
+							<p>Dashboard</p>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-chip sidebar-icons"></i>
+							<span>Apps</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-cube sidebar-icons"></i>
+							<span>Components</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-bolt-circle sidebar-icons"></i>
+							<span>Elements</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-bullseye sidebar-icons"></i>
+							<span>Font Icons</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-cog sidebar-icons"></i>
+							<span>Widgets</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-layout sidebar-icons"></i>
+							<span>Tables</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-outline bx-rotate-180 sidebar-icons"></i>
+							<span>DataTables</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-notepad bx-rotate-180 sidebar-icons"></i>
+							<span>Forms</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-user sidebar-icons"></i>
+							<span>Users</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-file-blank sidebar-icons"></i>
+							<span>Pages</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-lock-alt sidebar-icons"></i>
+							<span>Authentication</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-pointer sidebar-icons"></i>
+							<span>Drag and Drop</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-map-alt sidebar-icons"></i>
+							<span>Maps</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-pie-chart-alt sidebar-icons"></i>
+							<span>Charts</span>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-code-alt sidebar-icons"></i>
+							<span>Starter kit</span>
+							<i class="bx bx-chevron-right sidebar-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a class="sidebar-menu-item">
+							<i class="bx bx-book-alt sidebar-icons"></i>
+							<span>Documentation</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
 
-				<!-- sidebar  -->
-					<aside class="sidebar-container">
-						<ul class="sidebar-menu-lists">
-							<li class="active">
-								<a class="sidebar-menu-item">
-									<i class='bx bx-home-alt sidebar-icons'></i>
-									<p>Dashboard</p>
-									<i class='bx bx-chevron-right sidebar-arrow'></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-chip sidebar-icons'></i>
-									<span>Apps</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-cube sidebar-icons' ></i>
-									<span>Components</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-bolt-circle sidebar-icons'></i>
-									<span>Elements</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-bullseye sidebar-icons' ></i>
-									<span>Font Icons</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-cog sidebar-icons'></i>
-									<span>Widgets</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-layout sidebar-icons' ></i>
-									<span>Tables</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-outline bx-rotate-180 sidebar-icons' ></i>
-									<span>DataTables</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-notepad bx-rotate-180 sidebar-icons' ></i>
-									<span>Forms</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-user sidebar-icons' ></i>
-									<span>Users</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-file-blank sidebar-icons' ></i>
-									<span>Pages</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-lock-alt sidebar-icons' ></i>
-									<span>Authentication</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-pointer sidebar-icons'></i>
-									<span>Drag and Drop</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-map-alt sidebar-icons' ></i>
-									<span>Maps</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-pie-chart-alt sidebar-icons' ></i>
-									<span>Charts</span>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-code-alt sidebar-icons'></i>
-									<span>Starter kit</span>
-									<i class='bx bx-chevron-right sidebar-arrow' ></i>
-								</a>
-							</li>
-							<li>
-								<a class="sidebar-menu-item">
-									<i class='bx bx-book-alt sidebar-icons'></i>
-									<span>Documentation</span>
-								</a>
-							</li>
-						</ul>
-					</aside>
-
-				<!-- main content  -->
-					<main class="main-container">
-						<div class="cards-container">
-
-
-							<!-- revenue card  -->
-							<div class="revenue-card col-xxl-8 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card">
-									<div class="revenue-card-header">
-										<div class="primary-card-header">
-											<h2 class="card-title">Revenue</h2>
-											<div class="dropdown-container relative">
-												<button class="btn btn-action">
-													<i class='bx bx-dots-horizontal-rounded f20'></i>
-												</button>
-												<ul class="dropdown-lists">
-													<li class="dropdown-list"><a href="#" class="dropdown-link">Weekly</a></li>
-													<li class="dropdown-list"><a href="#" class="dropdown-link">Monthly</a></li>
-													<li class="dropdown-list"><a href="#" class="dropdown-link">Yearly</a></li>
-												</ul>
-											</div>
-										</div>
-										<div>
-											<p class="card-sub-title">Total Profit <span class="profit-value">&nbsp; $10,840</span></p>
-										</div>
-									</div>
-									<div class="card-body">
-									<div>
-										<ul class="card-options-container">
-											<li>
-												<a href="#" class="card-option-item">
-													Income
-												</a>
-											</li>
-											<li>
-												<a href="#" class="card-option-item expense">
-													Expense
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="area-chart"></div>
-									</div>
-								</section>
-								
-							</div>
-
-							<!-- sales by category card  -->
-							<div class="sales-by-category-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card">
-									<div class="sales-by-category-header">
-									<h2 class="card-title">Sales By Category</h2>
-									</div>
-									<div class="sales-chart"></div>
-								</section>
-								
-							</div>
-
-							<!-- Daily sales card-->
-							<div class="sales-card col-xxl-4 col-xl-6   col-lg-12 col-md-12 col-sm-12">
-								<section class=" dashboard-card ">
-									<div class="sales-card-header">
-										<div>
-											<span class="card-title">Daily Sales</span>
-											<p>Go to columns for details</p>
-										</div>
-										<div class="dollar-icon">
-											<i class='bx bx-dollar dollar-icon'></i>
-										</div>
-									</div>
-									<div class="daily-sales-chart">
-									</div>
-								</section>
-							</div>
-
-							<!-- Summary card  -->
-							<div class="summary-card col-xxl-4 col-xl-6  col-lg-12 col-md-12 col-sm-12">
-								<section class=" dashboard-card ">
-									<div class="summary-card-header">
-										<div>
-											<span class="card-title">Summary</span>
-										</div>
-										<div class="dropdown-container relative">
-											<button class="btn btn-action">
-												<i class='bx bx-dots-horizontal-rounded f20'></i>
-											</button>
-											<ul class="dropdown-lists">
-												<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
-												<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
-												<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="summary-card-body">
-										<div class="summary-details ">
-											<div>
-												<i class='bx bx-money-withdraw income-icon'></i>
-											</div>
-											<div class="progress-container">
-												<div class="flex justify-between">
-													<span>Income</span>
-													<span>$92,600</span>
-												</div>
-												<div class="progress-bar">
-													<div class="progress"></div>
-												</div>
-											</div>
-										</div>
-										<div class="summary-details ">
-											<div>
-												<i class='bx bx-purchase-tag profit-icon'></i>
-											</div>
-											<div class="progress-container">
-												<div class="flex justify-between">
-													<span>Profit</span>
-													<span>$37,515</span>
-												</div>
-												<div class="progress-bar">
-													<div class="profit-progress"></div>
-												</div>
-											</div>
-										</div>
-										<div class="summary-details ">
-											<div>
-												<i class='bx bx-credit-card-alt expense-icon'></i>
-											</div>
-											<div class="progress-container">
-												<div class="flex justify-between">
-													<span>Expenses</span>
-													<span>$55,085</span>
-												</div>
-												<div class="progress-bar">
-													<div class="expense-progress"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-							</div>
-
-
-							<!-- Orders card  -->
-							<div class="orders-card col-xxl-4 col-xl-12 col-md-12 col-sm-12">
-								<section class=" dashboard-card ">
-									<div class="orders-card-header">
-										<div>
-											<i class='bx bx-cart cart-icon'></i>
-										</div>
-										<div class="header-text">
-											<span class="card-title">3,192</span>
-											<p>Total Orders</p>
-										</div>
-									</div>
-									<div class="orders-chart">
-										
-									</div>
-								</section>
-							</div>
-
-							<!-- Recent Activities card  -->
-							<div class="activities-card col-xxl-4 col-xl-6  col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card ">
-									<div class="card-header">
-										<div>
-											<span class="card-title">Recent Activities</span>
-										</div>
-									</div>
-									<div class="activities-card-body">
-										<div>
-											<ul class="recent-activities-container">
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Updated Server Logs</p>
-														<span class="logged-time">just now</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
-														<span class="logged-time">2 min ago</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li >
-													<a class="flex g-10 align-center">
-														<p class="log-message">Backup Files EOD</p>
-														<span class="logged-time">14:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Collect documents from <strong>Sara</strong></p>
-														<span class="logged-time">16:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
-														<span class="logged-time">17:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Rebooted Server</p>
-														<span class="logged-time">17:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Send contract details to <strong>Freelancer</strong></p>
-														<span class="logged-time">18:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message"><strong>Kelly</strong> want to increase the time of the project</p>
-														<span class="logged-time">19:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Server down for maintainence</p>
-														<span class="logged-time">19:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Malicious link detected</p>
-														<span class="logged-time">20:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Rebooted Server</p>
-														<span class="logged-time">23:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Updated Server Logs</p>
-														<span class="logged-time">just now</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
-														<span class="logged-time">2 min ago</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li >
-													<a class="flex g-10 align-center">
-														<p class="log-message">Backup Files EOD</p>
-														<span class="logged-time">14:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Collect documents from <strong>Sara</strong></p>
-														<span class="logged-time">16:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-												<li>
-													<a class="flex g-10 align-center">
-														<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
-														<span class="logged-time">17:00</span>
-														<span class="activity-status">Pending</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="activities-footer">
-										<button class="btn flex align-center ">
-											<span>View All</span>
-											<i class='bx bx-right-arrow-alt f20'></i>
+			<!-- main content  -->
+			<main class="main-container overflow-y-auto">
+				<div class="flex flex-wrap">
+					<!-- revenue card  -->
+					<div class="revenue-card col-xxl-8 col-xl-12 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="card-header mb10">
+								<div class="flex align-center justify-between mb15">
+									<h2 class="card-title">Revenue</h2>
+									<div class="dropdown-container relative">
+										<button class="btn btn-action">
+											<i class="bx bx-dots-horizontal-rounded f20"></i>
 										</button>
-									</div>
-								</section>
-							</div>
-							
-
-							<!-- Transactions card -->
-							<div class="transaction-card col-xxl-4 col-xl-6 col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card">
-									<div class="transaction-card-header">
-										<h2 class="card-title">Transaction</h2>
-										<div class="dropdown-container relative">
-											<button class="btn btn-action">
-												<i class='bx bx-dots-horizontal-rounded f20'></i>
-											</button>
-											<ul class="dropdown-lists">
-												<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
-												<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
-												<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="card-body">
-										<ul>
-											<li >
-												<a class="transaction-list">
-													<div class="flex align-center g-10">
-														<div class="list-icon">
-															<i class='bx bx-home-alt f20 home-icon'></i>
-														</div>
-														<div>
-															<h4 class="transaction-title"> Electricity Bill</h4>
-															<small>04 Jan 1:00PM</small>
-														</div>
-													</div>
-													<div>
-														<span class="negative-amount">-$16.44</span>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="transaction-list">
-													<div class="flex align-center g-10">
-														<div class="list-icon">
-															<p class='blue-icon'>SP</p>
-														</div>
-														<div>
-															<h4 class="transaction-title">Shaun Park</h4>
-															<small>10 Jan 1:00PM</small>
-														</div>
-													</div>
-													<div>
-														<span class="positive-amount">+$36.11</span>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="transaction-list">
-													<div class="flex align-center g-10">
-														<div class="list-icon">
-															<p class='red-icon'>AD</p>
-														</div>
-														<div>
-															<h4 class="transaction-title">Amy Diaz</h4>
-															<small>31 Jan 1:00PM</small>
-														</div>
-													</div>
-													<div>
-														<span class="positive-amount">+$66.44</span>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="transaction-list">
-													<div class="flex align-center g-10">
-														<div class="list-icon">
-															<i class='bx bx-home-alt f20 purple-icon'></i>
-														</div>
-														<div>
-															<h4 class="transaction-title">Netflix</h4>
-															<small>02 Feb 1:00PM</small>
-														</div>
-													</div>
-													<div>
-														<span class="negative-amount">-$32.00</span>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="transaction-list">
-													<div class="flex align-center g-10">
-														<div class="list-icon">
-															<p class='blue-icon'>DA</p>
-														</div>
-														<div>
-															<h4 class="transaction-title">Daisy Anderson</h4>
-															<small>15 Feb 1:00PM</small>
-														</div>
-													</div>
-													<div>
-														<span class="positive-amount">+$10.08</span>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="transaction-list">
-													<div class="flex align-center g-10">
-														<div class="list-icon">
-															<p class='red-icon'>OG</p>
-														</div>
-														<div>
-															<h4 class="transaction-title">Oscar Garner</h4>
-															<small>20 Feb 1:00PM</small>
-														</div>
-													</div>
-													<div>
-														<span class="negative-amount">-$22.00</span>
-													</div>
-												</a>
-											</li>
+										<ul class="dropdown-lists">
+											<li class="dropdown-list"><a href="#" class="dropdown-link">Weekly</a></li>
+											<li class="dropdown-list"><a href="#" class="dropdown-link">Monthly</a></li>
+											<li class="dropdown-list"><a href="#" class="dropdown-link">Yearly</a></li>
 										</ul>
 									</div>
-								</section>
+								</div>
+								<div>
+									<p class="f18">Total Profit <span class="blue">&nbsp; $10,840</span></p>
+								</div>
 							</div>
-
-
-							<!-- Wallet card  -->
-							<div class="wallet-card col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card">
-									<div class="wallet-card-header">
-										<div class="flex justify-between">
-											<div class="user-info">
-												<img src="./Assets/images/walletProfile.jpg" alt="User Profile" class="wallet-user-image">
-												<span class="user-name">Alan Green</span>
-											</div>
-											<a href="#">
-												<i class='bx bx-plus card-icon'></i>
+							<div class="card-body">
+								<div>
+									<ul class="flex justify-end g30">
+										<li>
+											<a href="#" class="card-option-item">
+												Income
 											</a>
+										</li>
+										<li>
+											<a href="#" class="card-option-item expense">
+												Expense
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="area-chart"></div>
+							</div>
+						</section>
+					</div>
+
+					<!-- sales by category card  -->
+					<div class="sales-by-category-card col-xxl-4 col-xl-12 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="mb40">
+								<h2 class="card-title">Sales By Category</h2>
+							</div>
+							<div class="sales-chart"></div>
+						</section>
+					</div>
+
+					<!-- Daily sales card-->
+					<div class="sales-card col-xxl-4 col-xl-6 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card-small">
+							<div class="flex align-center justify-between mb30">
+								<div>
+									<span class="card-title">Daily Sales</span>
+									<p>Go to columns for details</p>
+								</div>
+								<div class="dollar-icon">
+									<i class="bx bx-dollar dollar-icon"></i>
+								</div>
+							</div>
+							<div class="daily-sales-chart"></div>
+						</section>
+					</div>
+
+					<!-- Summary card  -->
+					<div class="summary-card col-xxl-4 col-xl-6 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card-small">
+							<div class="flex align-center justify-between mb50">
+								<div>
+									<span class="card-title">Summary</span>
+								</div>
+								<div class="dropdown-container relative">
+									<button class="btn btn-action">
+										<i class="bx bx-dots-horizontal-rounded f20"></i>
+									</button>
+									<ul class="dropdown-lists">
+										<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
+										<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
+										<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary-card-body">
+								<div class="summary-details">
+									<div>
+										<i class="bx bx-money-withdraw income-icon"></i>
+									</div>
+									<div class="progress-container">
+										<div class="flex justify-between">
+											<span>Income</span>
+											<span>$92,600</span>
 										</div>
-										<div class="wallet-header-text">
-											<h2>Wallet Balance</h2>
-											<span class="f25">$2953</span>
+										<div class="progress-bar">
+											<div class="income-progress"></div>
 										</div>
 									</div>
-
-									<div class="wallet-card-body">
-										<div class="transaction-info">
-											<div class="transaction-status-box">
-												<div class="flex justify-between">
-													<span>Received</span>
-													<i class='bx bx-chevron-up uparrow-icon'></i>
-												</div>
-												<div class="transaction-value">
-													<span>$97.99</span>
-												</div>
-											</div>
-
-											<div class="transaction-status-box">
-												<div class="flex justify-between">
-													<span>Spent</span>
-													<i class='bx bx-chevron-down downarrow-icon'></i>
-												</div>
-												<div class=" transaction-value">
-													<span>$53.99</span>
-												</div>
-											</div>
+								</div>
+								<div class="summary-details">
+									<div>
+										<i class="bx bx-purchase-tag profit-icon"></i>
+									</div>
+									<div class="progress-container">
+										<div class="flex justify-between">
+											<span>Profit</span>
+											<span>$37,515</span>
 										</div>
-										<div class="wallet-other-details-container">
-											<div class="mb24">
-												<span class="transaction-status">Pending</span>
-											</div>
-											<div class="flex align-center justify-between mb4">
-												<span class="f13">Netflix</span>
-												<span> $ 13.85</span>
-											</div>
-											<div class="flex align-center justify-between mb4">
-												<span class="f13">BlueHost VPN</span>
-												<span> $ 15.66</span>
-											</div>
-											<div class="flex align-center justify-around mt24">
-												<a href="#" class="details-link">
-													View Details
-												</a>
-												<a href="#" class="pay-link">
-													Pay Now $29.51
-												</a>
-											</div>
+										<div class="progress-bar">
+											<div class="profit-progress"></div>
 										</div>
 									</div>
-								</section>
+								</div>
+								<div class="summary-details">
+									<div>
+										<i class="bx bx-credit-card-alt expense-icon"></i>
+									</div>
+									<div class="progress-container">
+										<div class="flex justify-between">
+											<span>Expenses</span>
+											<span>$55,085</span>
+										</div>
+										<div class="progress-bar">
+											<div class="expense-progress"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<!-- Orders card  -->
+					<div class="orders-card col-xxl-4 col-xl-12 col-md-12 col-sm-12">
+						<section class="dashboard-card-small">
+							<div class="orders-card-header">
+								<div>
+									<i class="bx bx-cart cart-icon"></i>
+								</div>
+								<div class="header-text">
+									<span class="card-title">3,192</span>
+									<p>Total Orders</p>
+								</div>
+							</div>
+							<div class="orders-chart"></div>
+						</section>
+					</div>
+
+					<!-- Recent Activities card  -->
+					<div class="activities-card col-xxl-4 col-xl-6 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="mb30">
+								<div>
+									<span class="card-title">Recent Activities</span>
+								</div>
+							</div>
+							<div class="activities-card-body overflow-y-auto">
+								<div>
+									<ul class="recent-activities-container">
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Updated Server Logs</p>
+												<span class="logged-time">just now</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
+												<span class="logged-time">2 min ago</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Backup Files EOD</p>
+												<span class="logged-time">14:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Collect documents from <strong>Sara</strong></p>
+												<span class="logged-time">16:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
+												<span class="logged-time">17:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Rebooted Server</p>
+												<span class="logged-time">17:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Send contract details to <strong>Freelancer</strong></p>
+												<span class="logged-time">18:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message"><strong>Kelly</strong> want to increase the time of the project</p>
+												<span class="logged-time">19:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Server down for maintainence</p>
+												<span class="logged-time">19:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Malicious link detected</p>
+												<span class="logged-time">20:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Rebooted Server</p>
+												<span class="logged-time">23:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Updated Server Logs</p>
+												<span class="logged-time">just now</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
+												<span class="logged-time">2 min ago</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Backup Files EOD</p>
+												<span class="logged-time">14:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Collect documents from <strong>Sara</strong></p>
+												<span class="logged-time">16:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+										<li>
+											<a class="flex g10 align-center">
+												<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
+												<span class="logged-time">17:00</span>
+												<span class="activity-status">Pending</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-activities-container">
+								<button class="btn flex align-center">
+									<span>View All</span>
+									<i class="bx bx-right-arrow-alt f20"></i>
+								</button>
+							</div>
+						</section>
+					</div>
+
+					<!-- Transactions card -->
+					<div class="transaction-card col-xxl-4 col-xl-6 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="flex align-center justify-between mb25">
+								<h2 class="card-title">Transaction</h2>
+								<div class="dropdown-container relative">
+									<button class="btn btn-action">
+										<i class="bx bx-dots-horizontal-rounded f20"></i>
+									</button>
+									<ul class="dropdown-lists">
+										<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
+										<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
+										<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-body">
+								<ul>
+									<li>
+										<a class="transaction-list">
+											<div class="flex align-center g10">
+												<div class="list-icon">
+													<i class="bx bx-home-alt f20 home-icon"></i>
+												</div>
+												<div>
+													<h4 class="transaction-title">Electricity Bill</h4>
+													<small>04 Jan 1:00PM</small>
+												</div>
+											</div>
+											<div>
+												<span class="negative-amount">-$16.44</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="transaction-list">
+											<div class="flex align-center g10">
+												<div class="list-icon">
+													<p class="blue-icon">SP</p>
+												</div>
+												<div>
+													<h4 class="transaction-title">Shaun Park</h4>
+													<small>10 Jan 1:00PM</small>
+												</div>
+											</div>
+											<div>
+												<span class="positive-amount">+$36.11</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="transaction-list">
+											<div class="flex align-center g10">
+												<div class="list-icon">
+													<p class="red-icon">AD</p>
+												</div>
+												<div>
+													<h4 class="transaction-title">Amy Diaz</h4>
+													<small>31 Jan 1:00PM</small>
+												</div>
+											</div>
+											<div>
+												<span class="positive-amount">+$66.44</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="transaction-list">
+											<div class="flex align-center g10">
+												<div class="list-icon">
+													<i class="bx bx-home-alt f20 purple-icon"></i>
+												</div>
+												<div>
+													<h4 class="transaction-title">Netflix</h4>
+													<small>02 Feb 1:00PM</small>
+												</div>
+											</div>
+											<div>
+												<span class="negative-amount">-$32.00</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="transaction-list">
+											<div class="flex align-center g10">
+												<div class="list-icon">
+													<p class="blue-icon">DA</p>
+												</div>
+												<div>
+													<h4 class="transaction-title">Daisy Anderson</h4>
+													<small>15 Feb 1:00PM</small>
+												</div>
+											</div>
+											<div>
+												<span class="positive-amount">+$10.08</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="transaction-list">
+											<div class="flex align-center g10">
+												<div class="list-icon">
+													<p class="red-icon">OG</p>
+												</div>
+												<div>
+													<h4 class="transaction-title">Oscar Garner</h4>
+													<small>20 Feb 1:00PM</small>
+												</div>
+											</div>
+											<div>
+												<span class="negative-amount">-$22.00</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+
+					<!-- Wallet card  -->
+					<div class="wallet-card col-xxl-4 col-xl-12 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="wallet-card-header">
+								<div class="flex justify-between">
+									<div class="user-info">
+										<img src="./Assets/images/walletProfile.jpg" alt="User Profile" class="wallet-user-image" />
+										<span class="user-name">Alan Green</span>
+									</div>
+									<a href="#">
+										<i class="bx bx-plus add-icon"></i>
+									</a>
+								</div>
+								<div class="wallet-header-text">
+									<h2>Wallet Balance</h2>
+									<span class="f25">$2953</span>
+								</div>
 							</div>
 
-
-							<!-- Recent Orders card-->
-							<div class="recent-orders-card col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card">
-									<div class="recent-orders-card-header mb24">
-										<h2 class="card-title">Recent Orders</h2>
+							<div class="wallet-card-body">
+								<div class="transaction-info">
+									<div class="transaction-status-box">
+										<div class="flex justify-between">
+											<span>Received</span>
+											<i class="bx bx-chevron-up f20 green"></i>
+										</div>
+										<div class="transaction-value">
+											<span>$97.99</span>
+										</div>
 									</div>
-									<div class="recent-orders-card-body ">
-										<table class="table">
-											<thead>
-												<tr>
-													<th class="table-header">
-														<div>
-															<span>Customer</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Product</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Invoice</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Price</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Status</span>
-														</div>
-													</th>
-												</tr>
-			
-											</thead>
 
-											<tbody>
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/images/profile.webp" alt="Avatar" class="customer-avatar">
-															<span>Luke Ivory</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="blue">Headphone</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>#46894</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$56.07</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="label-paid">Paid</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/images/prpic1.jpeg" alt="Avatar" class="customer-avatar">
-															<span>Andy King</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="orange">Nike Sport</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>#76894</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$88.00</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="label-shipped">Shipped</span>
-														</div>
-													</td>
-												</tr>
-												
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/images/prpic2.jpeg" alt="Avatar" class="customer-avatar">
-															<span>Laurie Fox</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="red">Sunglasses</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span> #66894</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$126.04</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="label-paid">Paid</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/images/prpic3.jpg" alt="Avatar"
-																class="customer-avatar">
-															<span>Ryan Collins</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="orange">Sport</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>#89891</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$108.09</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="label-shipped">Shipped</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/images/walletProfile.jpg" alt="Avatar"class="customer-avatar">
-															<span>Irene Collins</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="blue">Speakers</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>#75844</span>
-														</div>
-													</td>
-													<td class="table-data">
-														$84.00
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="label-pending">Pending</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/images/profile.webp" alt="Avatar"class="customer-avatar">
-															<span>Sonia Shaw</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="red">Watch</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>#76844</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$110.00</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span class="label-paid">Paid</span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
+									<div class="transaction-status-box">
+										<div class="flex justify-between">
+											<span>Spent</span>
+											<i class="bx bx-chevron-down f20 red"></i>
+										</div>
+										<div class="transaction-value">
+											<span>$53.99</span>
+										</div>
 									</div>
-								</section>
+								</div>
+								<div class="wallet-other-details-container">
+									<div class="mb25">
+										<span class="transaction-status">Pending</span>
+									</div>
+									<div class="flex align-center justify-between mb4">
+										<span class="f13">Netflix</span>
+										<span> $ 13.85</span>
+									</div>
+									<div class="flex align-center justify-between mb4">
+										<span class="f13">BlueHost VPN</span>
+										<span> $ 15.66</span>
+									</div>
+									<div class="flex align-center justify-around mt24">
+										<a href="#" class="details-link">
+											View Details
+										</a>
+										<a href="#" class="pay-link">
+											Pay Now $29.51
+										</a>
+									</div>
+								</div>
 							</div>
+						</section>
+					</div>
 
-							<!-- Top selling card-->
-							<div class="top-selling-card col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								<section class="dashboard-card">
-									<div class="recent-orders-card-header mb24">
-										<h2 class="card-title">Recent Orders</h2>
-									</div>
-									<div class="recent-orders-card-body ">
-										<table class="table">
-											<thead>
-												<tr>
-													<th class="table-header">
-														<div>
-															<span>Product</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Price</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Discount</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Sold</span>
-														</div>
-													</th>
-													<th class="table-header">
-														<div>
-															<span>Source</span>
-														</div>
-													</th>
-												</tr>
-			
-											</thead>
-
-											<tbody>
-												
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/productImages/headphone.jpg" alt="Headphone" class="product-image">
-															<div>
-																<h4 class="product-title">Headphone</h4>
-																<small class="blue">Digital</small>
-															</div>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$168.09</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$60.09</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>170</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div class="red flex g-5">
-															<i class='bx bx-chevrons-right f15'></i>
-															<span>Direct</span>
-														</div>
-													</td>
-												</tr>
-												
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/productImages/shoe.jpg" alt="Avatar" class="product-image">
-															<div>
-																<h4 class="product-title">Shoes</h4>
-																<small class="orange">Fashion</small>
-															</div>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$108.09</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$47.09</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>130</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div class="blue flex g-5">
-															<i class='bx bx-chevrons-right f15'></i>
-															<span>Google</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/productImages/watch.jpg" alt="watch" class="product-image">
-																<div>
-																	<h4 class="product-title">Watch</h4>
-																	<small class="red">Accessories</small>
-																</div>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$88.00</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$20.00</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>66</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div class="orange flex g-5">
-															<i class='bx bx-chevrons-right f15'></i>
-															<span>Ads</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/productImages/laptop.jpg" alt="laptop" class="product-image">
-															<div>
-																<h4 class="product-title">Laptop</h4>
-																<small class="blue">Digital</small>
-															</div>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$110.00</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$33.00</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>35</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div class="blue flex g-5">
-															<i class='bx bx-chevrons-right f15'></i>
-															<span>Email</span>
-														</div>
-													</td>
-												</tr>
-
-												<tr>
-													<td class="table-data">
-														<div class="flex align-center g-10">
-															<img src="./assets/productImages/camera.jpg" alt="camera" class="product-image">
-															<div>
-																<h4 class="product-title">Camera</h4>
-																<small class="blue">Digital</small>
-															</div>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$126.04</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>$26.04</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div>
-															<span>30</span>
-														</div>
-													</td>
-													<td class="table-data">
-														<div class="orange flex g-5">
-															<i class='bx bx-chevrons-right f15'></i>
-															<span>Referral</span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</section>
+					<!-- Recent Orders card-->
+					<div class="recent-orders-card col-xxl-6 col-xl-12 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="recent-orders-card-header mb25">
+								<h2 class="card-title">Recent Orders</h2>
 							</div>
+							<div class="overflow-x-auto">
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="table-header">
+												<div>
+													<span>Customer</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Product</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Invoice</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Price</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Status</span>
+												</div>
+											</th>
+										</tr>
+									</thead>
 
+									<tbody>
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/images/profile.webp" alt="Avatar" class="customer-avatar" />
+													<span>Luke Ivory</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="blue">Headphone</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>#46894</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$56.07</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="label-paid">Paid</span>
+												</div>
+											</td>
+										</tr>
 
-							
-						</div>
-					</main>
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/images/prpic1.jpeg" alt="Avatar" class="customer-avatar" />
+													<span>Andy King</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="orange">Nike Sport</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>#76894</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$88.00</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="label-shipped">Shipped</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/images/prpic2.jpeg" alt="Avatar" class="customer-avatar" />
+													<span>Laurie Fox</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="red">Sunglasses</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span> #66894</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$126.04</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="label-paid">Paid</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/images/prpic3.jpg" alt="Avatar" class="customer-avatar" />
+													<span>Ryan Collins</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="orange">Sport</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>#89891</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$108.09</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="label-shipped">Shipped</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/images/walletProfile.jpg" alt="Avatar" class="customer-avatar" />
+													<span>Irene Collins</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="blue">Speakers</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>#75844</span>
+												</div>
+											</td>
+											<td class="table-data">
+												$84.00
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="label-pending">Pending</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/images/profile.webp" alt="Avatar" class="customer-avatar" />
+													<span>Sonia Shaw</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="red">Watch</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>#76844</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$110.00</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span class="label-paid">Paid</span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</div>
+
+					<!-- Top selling card-->
+					<div class="top-selling-card col-xxl-6 col-xl-12 col-lg12 col-md-12 col-sm-12">
+						<section class="dashboard-card">
+							<div class="recent-orders-card-header mb25">
+								<h2 class="card-title">Recent Orders</h2>
+							</div>
+							<div class="recent-orders-card-body">
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="table-header">
+												<div>
+													<span>Product</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Price</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Discount</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Sold</span>
+												</div>
+											</th>
+											<th class="table-header">
+												<div>
+													<span>Source</span>
+												</div>
+											</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/productImages/headphone.jpg" alt="Headphone" class="product-image" />
+													<div>
+														<h4 class="product-title">Headphone</h4>
+														<small class="blue">Digital</small>
+													</div>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$168.09</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$60.09</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>170</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div class="red flex g5">
+													<i class="bx bx-chevrons-right f15"></i>
+													<span>Direct</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/productImages/shoe.jpg" alt="Avatar" class="product-image" />
+													<div>
+														<h4 class="product-title">Shoes</h4>
+														<small class="orange">Fashion</small>
+													</div>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$108.09</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$47.09</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>130</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div class="blue flex g5">
+													<i class="bx bx-chevrons-right f15"></i>
+													<span>Google</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/productImages/watch.jpg" alt="watch" class="product-image" />
+													<div>
+														<h4 class="product-title">Watch</h4>
+														<small class="red">Accessories</small>
+													</div>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$88.00</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$20.00</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>66</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div class="orange flex g5">
+													<i class="bx bx-chevrons-right f15"></i>
+													<span>Ads</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/productImages/laptop.jpg" alt="laptop" class="product-image" />
+													<div>
+														<h4 class="product-title">Laptop</h4>
+														<small class="blue">Digital</small>
+													</div>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$110.00</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$33.00</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>35</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div class="blue flex g5">
+													<i class="bx bx-chevrons-right f15"></i>
+													<span>Email</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="table-data">
+												<div class="flex align-center g10">
+													<img src="./assets/productImages/camera.jpg" alt="camera" class="product-image" />
+													<div>
+														<h4 class="product-title">Camera</h4>
+														<small class="blue">Digital</small>
+													</div>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$126.04</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>$26.04</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div>
+													<span>30</span>
+												</div>
+											</td>
+											<td class="table-data">
+												<div class="orange flex g5">
+													<i class="bx bx-chevrons-right f15"></i>
+													<span>Referral</span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<footer class="app-footer">
+					<p class="footer-copyright">Copyright &copy; 2024 Dashboard . All rights reserved</p>
+					<div class="flex align-center g5">
+						<p>Coded with</p>
+						<i class='bx bxs-heart' style='color:#ff0000'  ></i>
+
+					</div>
+				</footer>
+			</main>
 		</section>
 
 		<!-- Jquery -->

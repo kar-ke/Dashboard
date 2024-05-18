@@ -39,14 +39,14 @@
     .col-lg-2 { flex: 0 0 16.67%; width: 16.67%; }
     .col-lg-3 { flex: 0 0 25%;    width: 25%; }
     .col-lg-4 { flex: 0 0 33.33%; width: 33.33%; }
-    .col-lg-5 { flex: 0 0 41.67%; width: 41.67%; }
+    .col-lg5 { flex: 0 0 41.67%; width: 41.67%; }
     .col-lg-6 { flex: 0 0 50%;    width: 50%; }
     .col-lg-7 { flex: 0 0 58.33%; width: 58.33%; }
-    .col-lg-8 { flex: 0 0 66.67%; width: 66.67%; }
+    .col-lg8 { flex: 0 0 66.67%; width: 66.67%; }
     .col-lg-9 { flex: 0 0 75%;    width: 75%; }
-    .col-lg-10 { flex: 0 0 83.33%; width: 83.33%; }
+    .col-lg10 { flex: 0 0 83.33%; width: 83.33%; }
     .col-lg-11 { flex: 0 0 91.67%; width: 91.67%; }
-    .col-lg-12 { flex: 0 0 100%;   width: 100%; }
+    .col-lg12 { flex: 0 0 100%;   width: 100%; }
 
     .sidebar-container{
         left: -230px;
