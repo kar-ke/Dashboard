@@ -7,6 +7,10 @@
     overflow-y: auto;
 }
 
+.main-container.expand{
+    width: 100%;
+}
+
 .cards-container{
     display: flex;
     flex-wrap: wrap;

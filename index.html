@@ -35,144 +35,169 @@
 					<!-- country and countries dropdown -->
 					<li class="dropdown-container relative">
 						<button class="btn btn-action">
-							<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="selected-country" />
+							<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="country" />
 						</button>
 						
 						<ul class="dropdown-lists arrow-head">
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<img src="./Assets/icons/flags/germany-flag.png" alt="german flag" class="s20" />
-									<span>German</span>
+									<p>German</p>
 								</a>
 							</li>
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<img src="./Assets/icons/flags/japan-flag.png" alt="japanese flag" class="s20" />
-									<span>Japanese</span>
+									<p>Japanese</p>
 								</a>
 							</li>
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<img src="./Assets/icons/flags/france-flag.png" alt="french flag" class="s20" />
-									<span>French</span>
+									<p>French</p>
 								</a>
 							</li>
 							<li class="dropdown-list">
 								<a href="#" class="dropdown-link">
 									<img src="./Assets/icons/flags/canada-flag.png" alt="English flag" class="s20" />
-									<span>English</span>
+									<p>English</p>
 								</a>
 							</li>
 						</ul>
 					</li>
 					<!-- mail to user and mail to dropdoen  -->
-					<li>
-						<button class="btn" onclick="mail_dropdown_handler()"><i class="mail-to-icon bx bx-envelope"></i></button>
-						<div class="mail-to-dropdown">
-							<a href="#" class="mail-to-user-list">
-								<div>
-									<img src="./Assets/images/prpic1.jpeg" alt="profile picture" class="mail-to-profile-picture" />
-								</div>
-								<div>
-									<span class="user-name">Kara Young</span>
-									<p class="message-title">ACCOUNT UPDATE</p>
-								</div>
-							</a>
-							<a href="#" class="mail-to-user-list">
-								<div>
-									<img src="./Assets/images/prpic2.jpeg" alt="profile picture" class="mail-to-profile-picture" />
-								</div>
-								<div>
-									<p class="user-name">Daisy Anderson</p>
-									<p class="message-title">ACCOUNT UPDATE</p>
-								</div>
-							</a>
-							<a href="#" class="mail-to-user-list">
-								<div>
-									<img src="./Assets/images/prpic3.jpg" alt="profile picture" class="mail-to-profile-picture" />
-								</div>
-								<div>
-									<p class="user-name">Oscar Garner</p>
-									<p class="message-title">ACCOUNT UPDATE</p>
-								</div>
-							</a>
-						</div>
+					<li class="dropdown-container relative">
+						<button class="btn btn-action">
+							<i class="mail-to-button bx bx-envelope"></i>
+						</button>
+						<ul class="dropdown-lists arrow-head ">
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<div>
+										<img src="./Assets/images/prpic1.jpeg" alt="profile picture" class="mail-to-profile-picture" />
+									</div>
+									<div>
+										<span class="user-name">Kara Young</span>
+										<p class="message-title">ACCOUNT UPDATE</p>
+									</div>
+								</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<div>
+										<img src="./Assets/images/prpic2.jpeg" alt="profile picture" class="mail-to-profile-picture" />
+									</div>
+									<div>
+										<p class="user-name">Daisy Anderson</p>
+										<p class="message-title">ACCOUNT UPDATE</p>
+									</div>
+								</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<div>
+										<img src="./Assets/images/prpic3.jpg" alt="profile picture" class="mail-to-profile-picture" />
+									</div>
+									<div>
+										<p class="user-name">Oscar Garner</p>
+										<p class="message-title">ACCOUNT UPDATE</p>
+									</div>
+								</a>
+							</li>
+							
+						</ul>
 					</li>
 					<!-- notification and notification dropdown  -->
-					<li>
-						<button onclick="notification_dropdown_handler()" class="btn notification-btn">
+					<li class="dropdown-container relative">
+						<button class="btn btn-action">
 							<i class="notification-icon bx bx-bell"></i>
 							<span class="notification-indicator"></span>
 						</button>
 
-						<div class="notifications-dropdown">
-							<a href="#" class="notification-dropdown-list">
-								<div>
-									<i class="bx bx-server server-icon"></i>
-								</div>
-								<div>
-									<span class="notification-title">Server Rebooted</span>
-									<p class="notification-sub-msg">45 min ago</p>
-								</div>
-								<div class="close-icon">
-									<i class="bx bx-x"></i>
-								</div>
-							</a>
-
-							<a href="#" class="notification-dropdown-list">
-								<div>
-									<i class="bx bx-heart heart-icon"></i>
-								</div>
-								<div>
-									<span class="notification-title">Licence Expiring Soon</span>
-									<p class="notification-sub-msg">45 min ago</p>
-								</div>
-								<div class="close-icon">
-									<i class="bx bx-x"></i>
-								</div>
-							</a>
-
-							<a href="#" class="notification-dropdown-list">
-								<div>
-									<i class="bx bx-file file-icon"></i>
-								</div>
-								<div>
-									<span class="notification-title">
-										Kelly <br />
-										Portfolio.pdf
-									</span>
-									<p class="notification-sub-msg">670 kb</p>
-								</div>
-								<div class="close-icon">
-									<i class="bx bxs-check-circle" style="color:#0D9A5D"></i>
-								</div>
-							</a>
-						</div>
+						<ul class="dropdown-lists arrow-head ">
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<div>
+										<i class="bx bx-server server-icon"></i>
+									</div>
+									<div>
+										<span class="notification-title">Server Rebooted</span>
+										<p class="notification-sub-msg">45 min ago</p>
+									</div>
+									<div class="close-icon">
+										<i class="bx bx-x"></i>
+									</div>
+								</a>
+							</li>
+							
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<div>
+										<i class="bx bx-heart heart-icon"></i>
+									</div>
+									<div>
+										<span class="notification-title">Licence Expiring Soon</span>
+										<p class="notification-sub-msg">45 min ago</p>
+									</div>
+									<div class="close-icon">
+										<i class="bx bx-x"></i>
+									</div>
+								</a>	
+							</li>
+							
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<div>
+										<i class="bx bx-file file-icon"></i>
+									</div>
+									<div>
+										<span class="notification-title">
+											Kelly <br />
+											Portfolio.pdf
+										</span>
+										<p class="notification-sub-msg">670 kb</p>
+									</div>
+									<div class="close-icon">
+										<i class="bx bxs-check-circle" style="color:#0D9A5D"></i>
+									</div>
+								</a>	
+							</li>
+							
+						</ul>
 					</li>
 					<!-- profile and profile menu dropdown  -->
-					<li>
-						<button class="btn" onclick="profile_dropdown_handler()">
-							<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture s30" />
+					<li class="dropdown-container relative">
+						<button class="btn btn-action">
+							<img src="./Assets/images/profile.webp" alt="profileimage" class="profile-picture s28" />
 						</button>
 
-						<div class="profile-dropdown">
-							<a href="#" class="profile-dopdown-list">
-								<i class="bx bx-user f18"></i>
-								<span>Profile</span>
-							</a>
-							<a href="#" class="profile-dopdown-list">
-								<i class="bx bxs-inbox f18"></i>
-								<span>Inbox</span>
-							</a>
-							<a href="#" class="profile-dopdown-list">
-								<i class="bx bx-lock-alt f18"></i>
-								<span>Lock Screen</span>
-							</a>
-							<a href="#" class="profile-dopdown-list">
-								<i class="bx bx-log-out f18"></i>
-								<span>Sign Out</span>
-							</a>
-						</div>
+						<ul class="dropdown-lists arrow-head ">
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<i class="bx bx-user f18"></i>
+									<span>Profile</span>
+								</a>	
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<i class="bx bxs-inbox f18"></i>
+									<span>Inbox</span>
+								</a>	
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<i class="bx bx-lock-alt f18"></i>
+									<span>Lock Screen</span>
+								</a>	
+							</li>
+							<li class="dropdown-list">
+								<a href="#" class="dropdown-link">
+									<i class="bx bx-log-out f18"></i>
+									<span>Sign Out</span>
+								</a>	
+							</li>
+							
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -197,20 +222,29 @@
 					</div>
 				</div>
 
-				<div class="settings-container">
-					<button onclick="settings_dropdown_handler()" class="settings-button btn">
+				<div class="dropdown-container relative">
+					<button class="settings-button btn btn-action">
 						<span>Settings&nbsp;&nbsp;</span>
 						<i class="bx bxs-chevron-down"></i>
 					</button>
-					<div>
-						<ul class="settings-dropdown">
-							<li class="settings-dropdown-item">Settings</li>
-							<li class="settings-dropdown-item">Mail</li>
-							<li class="settings-dropdown-item">Print</li>
-							<li class="settings-dropdown-item">Download</li>
-							<li class="settings-dropdown-item">Share</li>
-						</ul>
-					</div>
+					<ul class="dropdown-lists arrow-head ">
+						<li  class="dropdown-list">
+							<a href="#" class="dropdown-link">Settings</a>
+						</li>
+						<li  class="dropdown-list">
+							<a href="#" class="dropdown-link">Mail</a>
+						</li>
+						<li  class="dropdown-list">
+							<a href="#" class="dropdown-link">Print</a>
+						</li>
+						<li  class="dropdown-list">
+							<a href="#" class="dropdown-link">Download</a>
+						</li>
+						<li  class="dropdown-list">
+							<a href="#" class="dropdown-link">Share</a>
+						</li>
+						
+					</ul>
 				</div>
 			</div>
 		</header>
@@ -219,7 +253,7 @@
 		<section class="dashboard-section">
 
 				<!-- sidebar  -->
-					<aside class="app-sidebar-container">
+					<aside class="sidebar-container">
 						<ul class="sidebar-menu-lists">
 							<li class="active">
 								<a class="sidebar-menu-item ">
@@ -238,7 +272,7 @@
 								</ul>
 
 							</li>
-							<li >
+							<li>
 								<a class="sidebar-menu-item">
 									<i class='bx bx-chip sidebar-icons'></i>
 									<span>Apps</span>

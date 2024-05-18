@@ -1,6 +1,5 @@
 
 /* primary header styles  */
-
 .primary-header{
     height: var(--h-header);
     display: flex;
@@ -58,7 +57,7 @@
 }
 
 /* country icon and dropdown  */
-.selected-country{
+.country{
     width: 20px;
     height: 20px;
     vertical-align: middle;
@@ -66,45 +65,10 @@
 
 
 /* mail icon and dropdown  */
-.mail-to-icon{
+.mail-to-button{
     font-size: 24px;
     vertical-align: middle;
     color: var(--c-grey);
-}
-
-.mail-to-dropdown{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    min-width: 14rem;
-    padding: 18px 20px;
-    background-color: var(--c-blue-100);
-    border-radius: 5px;
-    position: absolute;
-    top: 43px;
-    right: 82px;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.mail-to-dropdown:after{
-    content: "";
-    border-style: solid;
-    border-width: 7px;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--c-blue-100);
-    border-left-color: transparent;
-    position: absolute;
-    top: -14px;
-    right: 13px
-}
-
-.mail-to-user-list{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    
 }
 
 .mail-to-profile-picture{
@@ -116,25 +80,17 @@
     border-radius: 10px;
 }
 
-.user-name{
-    color: var(--c-grey-100);
-}
-
 .message-title{
     font-size: 10px;
     font-weight: 600;
     color: var(--c-grey);
 }
 
-.mail-to-user-list:hover .user-name{
+.mail-to-user .dropdown-list:hover .user-name{
     color: var(--c-white)
 }
 
-/* notification icon */
-.notification-btn{
-    position: relative;
-}
-
+/* notification icon and dropdown */
 .notification-icon{
     font-size: 22px;
     vertical-align: middle;
@@ -152,55 +108,11 @@
     right: 0;
 }
 
-.notifications-dropdown{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    min-width: 15rem;
-    padding: 18px 20px;
-    background-color: var(--c-blue-100);
-    border-radius: 5px;
-    position: absolute;
-    top: 43px;
-    right: 42px;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.notifications-dropdown:after{
-    content: "";
-    border-style: solid;
-    border-width: 7px;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--c-blue-100);
-    border-left-color: transparent;
-    position: absolute;
-    top: -13px;
-    right: 12px;
-}
-
-.notification-dropdown-list{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.notification-title{
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--c-grey-100);
-}
-
 .notification-sub-msg{
     font-size: 12px;
     color: var(--c-grey)
 }
 
-.notification-dropdown-list:hover 
-.notification-title{
-    color: var(--c-white)
-}
 
 .server-icon{
     font-size: 28px;
@@ -217,8 +129,7 @@
     color: var(--c-red);
 }
 
-.notification-dropdown-list:hover 
-.heart-icon{
+.dropdown-list:hover .heart-icon{
     color : var(--c-blue);
 }
 
@@ -232,50 +143,10 @@
     color : var(--c-red)
 }
 
-
-/* user profile picture  */
+/* user icon and dropdown */
 .profile-picture{
     border-radius: 5px;
     object-fit: cover;
     vertical-align: middle;
-}
-
-.profile-dropdown{
-    display: flex;
-    flex-direction: column;
-    width: 155px;
-    padding: 12px 20px;
-    background-color: var(--c-blue-100);
-    border-radius: 5px;
-    position: absolute;
-    top: 43px;
-    right: -10px;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.profile-dropdown:after{
-    content: "";
-    border-style: solid;
-    border-width: 7px;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--c-blue-100);
-    border-left-color: transparent;
-    position: absolute;
-    top: -13px;
-    right: 18px;
-}
-
-.profile-dopdown-list{
-    height: 45px;
-    color: var(--c-grey-100);
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.profile-dopdown-list:hover{
-    color: var(--c-white)
 }
 

@@ -1,5 +1,6 @@
-.app-sidebar-container{
-    position: absolute;
+.sidebar-container{
+    position: fixed;
+    left: 0;
     height: calc(100vh - var(--h-header)*2);
     width: 220px;
     padding: 18px;
@@ -15,7 +16,6 @@
     margin-bottom: 4px;
     padding: 0 12px;
     color: var(--c-blue-600);
-    transition: background-color 0.5s ease;
     
 }
 
@@ -91,4 +91,8 @@
 
 .sidebar-menu-link:hover {
     color: var(--c-blue-500);
+}
+
+.sidebar-container.sidebar-close{
+    left: -230px;
 }
