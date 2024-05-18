@@ -8,6 +8,7 @@
     
     --c-grey : #888ea8;
     --c-grey-100 : #bfc9d4;
+    --c-grey-200 : #0D2B46;
 
     /* searchbar color  */
     --c-blue-200 : #0e1726;
@@ -27,6 +28,8 @@
     --c-red: #E7515A;
     --c-green : #009688;
     --c-blue : #24C8D8;
+    --c-yellow : #E2A03F;
+    --c-purple : #5C1AC3;
     --c-neonblue: #4361EE;
     --c-shadow-white:#292c49;
 }

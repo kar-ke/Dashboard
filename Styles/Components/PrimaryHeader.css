@@ -20,7 +20,6 @@
     width: 370px;
     padding: 10px 10px 10px 35px;
     background-color: var(--c-blue-200);
-    color: var(--c-grey);
     border: 1px solid rgba(53, 55, 68, 0.28);
     border-radius: 6px;
 }
@@ -39,8 +38,8 @@
 
 .search-icon {
     position: absolute;
-    top: 18px;
-    left: 210px;
+    top: 16px;
+    left: 212px;
 }
 
 .header-icons-container{
@@ -92,7 +91,7 @@
     display: block;
     width: 5px;
     height: 5px;
-    background-color: #1abc9c;
+    background-color: var(--c-green);
     border-radius: 50%;
     position: absolute;
     top: 0;
