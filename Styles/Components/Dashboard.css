@@ -491,23 +491,10 @@
     font-family: var(--font-semibold);
 }
 
-.label-paid {
+.recent-orders-status{
     padding: 3px 8px;
     color: var(--c-white);
     border-radius: 6px;
-    background-color: var(--c-green);
-}
-.label-pending {
-    padding: 3px 8px;
-    color: var(--c-white);
-    border-radius: 6px;
-    background-color: var(--c-red);
-}
-.label-shipped {
-    padding: 3px 8px;
-    color: var(--c-white);
-    border-radius: 6px;
-    background-color: var(--c-neonblue);
 }
 
 .recent-orders-card tr:hover{

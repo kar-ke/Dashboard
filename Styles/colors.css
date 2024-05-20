@@ -34,7 +34,14 @@
     --c-shadow-white:#292c49;
 }
 
-.blue { color: #4361EE}
-.orange { color: #E2A03F}
-.red { color: #E7515A}
-.green { color: #009688;}
+
+.c-blue { color: #4361EE}
+.c-orange { color: #E2A03F}
+.c-red { color: #E7515A}
+.c-green { color: #009688;}
+
+
+/* background colour classes  */
+.bg-c-blue { background-color: #4361EE}
+.bg-c-red { background-color: #E7515A}
+.bg-c-green { background-color: #009688;}
