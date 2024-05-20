@@ -23,15 +23,20 @@
 .s40 { width: 40px; height: 40px; }
 .s50 { width: 50px; height: 50px; }
 
+/* dropdown width */
+.w120 { width: 120px; }
+.w140 { width: 140px; }
+.w160 { width: 160px; }
+.w200 { width: 200px; }
+.w240 { width: 240px; }
+
 /* padding  */
 .p0 { padding: 0; }
 .p20 { padding: 20px; }
 
-
 /* margin top  */
 .mt40{ margin-top: 40px;}
 .mt24{ margin-top: 24px;}
-
 
 /* margin bottom  */
 .mb4 { margin-bottom: 4px; }
