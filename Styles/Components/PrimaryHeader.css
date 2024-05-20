@@ -8,14 +8,6 @@
     padding: 0 1.5rem;
 }
 
-.logo-container{
-    display: flex;
-    gap: 10px;
-    font-size: 24px;
-    font-family: var(--font-bold);
-    color: var(--c-white-100);
-}
-
 .search-bar{
     width: 370px;
     padding: 10px 10px 10px 35px;

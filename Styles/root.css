@@ -2,6 +2,7 @@
 /* global styles  */
 @import url("./global.css");
 @import url("./font.css");
+@import url("./typography.css");
 @import url("./colors.css");
 @import url("./flex.css");
 @import url("./style-bits.css");

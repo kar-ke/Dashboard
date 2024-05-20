@@ -24,12 +24,6 @@
     border-radius: 5px;
 }
 
-.card-title{
-    font-size: 18px;
-    font-family: var(--font-semibold);
-    color: var(--c-white-100)
-}
-
 /* revenue card  */
 .revenue-card {
     flex: 0 0 66.67%;
