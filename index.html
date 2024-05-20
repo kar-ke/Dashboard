@@ -125,9 +125,9 @@
 										<span class="notification-title">Server Rebooted</span>
 										<p class="notification-sub-msg">45 min ago</p>
 									</div>
-									<div class="close-icon">
+									<button class="btn close-icon">
 										<i class="bx bx-x"></i>
-									</div>
+									</button>
 								</a>
 							</li>
 
@@ -140,9 +140,9 @@
 										<span class="notification-title">Licence Expiring Soon</span>
 										<p class="notification-sub-msg">45 min ago</p>
 									</div>
-									<div class="close-icon">
+									<button class="btn close-icon">
 										<i class="bx bx-x"></i>
-									</div>
+									</button>
 								</a>
 							</li>
 
@@ -228,19 +228,16 @@
 					</button>
 					<ul class="w120 dropdown-lists arrow-head">
 						<li class="dropdown-list">
-							<a href="#" class="dropdown-link">Settings</a>
+							<button class="btn dropdown-link">Mail</button>
 						</li>
 						<li class="dropdown-list">
-							<a href="#" class="dropdown-link">Mail</a>
+							<button class="btn dropdown-link">Print</button>
 						</li>
 						<li class="dropdown-list">
-							<a href="#" class="dropdown-link">Print</a>
+							<button class="btn dropdown-link">Download</button>
 						</li>
 						<li class="dropdown-list">
-							<a href="#" class="dropdown-link">Download</a>
-						</li>
-						<li class="dropdown-list">
-							<a href="#" class="dropdown-link">Share</a>
+							<button class="btn dropdown-link">Share</button>
 						</li>
 					</ul>
 				</div>
@@ -380,9 +377,9 @@
 											<i class="bx bx-dots-horizontal-rounded f20"></i>
 										</button>
 										<ul class="w120 dropdown-lists">
-											<li class="dropdown-list"><a href="#" class="dropdown-link">Weekly</a></li>
-											<li class="dropdown-list"><a href="#" class="dropdown-link">Monthly</a></li>
-											<li class="dropdown-list"><a href="#" class="dropdown-link">Yearly</a></li>
+											<li class="dropdown-list"><button class="btn dropdown-link">Weekly</button></li>
+											<li class="dropdown-list"><button class="btn dropdown-link">Monthly</button></li>
+											<li class="dropdown-list"><button class="btn dropdown-link">Yearly</button></li>
 										</ul>
 									</div>
 								</div>
@@ -394,14 +391,10 @@
 								<div>
 									<ul class="flex justify-end g30">
 										<li>
-											<a href="#" class="card-option-item">
-												Income
-											</a>
+											<button class="btn card-option-item">Income</button>
 										</li>
 										<li>
-											<a href="#" class="card-option-item expense">
-												Expense
-											</a>
+											<button class="btn card-option-item expense">Expense</button>
 										</li>
 									</ul>
 								</div>
@@ -448,9 +441,9 @@
 										<i class="bx bx-dots-horizontal-rounded f20"></i>
 									</button>
 									<ul class="w160 dropdown-lists">
-										<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
-										<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
-										<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
+										<li class="dropdown-list"><button class="btn dropdown-link">View Report</button></li>
+										<li class="dropdown-list"><button class="btn dropdown-link">Edit Report</button></li>
+										<li class="dropdown-list"><button class="btn dropdown-link">Mark as Done</button></li>
 									</ul>
 								</div>
 							</div>
@@ -528,117 +521,85 @@
 							<div class="activities-card-body overflow-y-auto">
 								<div>
 									<ul class="recent-activities-container">
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Updated Server Logs</p>
-												<time class="logged-time">just now</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Updated Server Logs</p>
+											<time class="logged-time">just now</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
-												<time class="logged-time">2 min ago</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
+											<time class="logged-time">2 min ago</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center justify-between">
-												<p class="log-message">Backup Files EOD</p>
-												<time class="logged-time">14:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Backup Files EOD</p>
+											<time class="logged-time">14:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Collect documents from <strong>Sara</strong></p>
-												<time class="logged-time">16:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Collect documents from <strong>Sara</strong></p>
+											<time class="logged-time">16:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
-												<time class="logged-time">17:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
+											<time class="logged-time">17:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Rebooted Server</p>
-												<time class="logged-time">17:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Rebooted Server</p>
+											<time class="logged-time">17:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Send contract details to <strong>Freelancer</strong></p>
-												<time class="logged-time">18:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Send contract details to <strong>Freelancer</strong></p>
+											<time class="logged-time">18:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message"><strong>Kelly</strong> want to increase the time of the project</p>
-												<time class="logged-time">19:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message"><strong>Kelly</strong> want to increase the time of the project</p>
+											<time class="logged-time">19:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Server down for maintainence</p>
-												<time class="logged-time">19:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Server down for maintainence</p>
+											<time class="logged-time">19:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Malicious link detected</p>
-												<time class="logged-time">20:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Malicious link detected</p>
+											<time class="logged-time">20:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Rebooted Server</p>
-												<time class="logged-time">23:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Rebooted Server</p>
+											<time class="logged-time">23:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Updated Server Logs</p>
-												<time class="logged-time">just now</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Updated Server Logs</p>
+											<time class="logged-time">just now</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
-												<time class="logged-time">2 min ago</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Send Mail to <strong>HR</strong> and <strong>Admin</strong></p>
+											<time class="logged-time">2 min ago</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Backup Files EOD</p>
-												<time class="logged-time">14:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Backup Files EOD</p>
+											<time class="logged-time">14:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Collect documents from <strong>Sara</strong></p>
-												<time class="logged-time">16:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Collect documents from <strong>Sara</strong></p>
+											<time class="logged-time">16:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
-										<li>
-											<a class="flex g10 align-center">
-												<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
-												<time class="logged-time">17:00</time>
-												<span class="activity-status">Pending</span>
-											</a>
+										<li class="flex g10 align-center">
+											<p class="log-message">Conference call with <strong>Marketing Manager</strong></p>
+											<time class="logged-time">17:00</time>
+											<span class="activity-status">Pending</span>
 										</li>
 									</ul>
 								</div>
@@ -662,9 +623,9 @@
 										<i class="bx bx-dots-horizontal-rounded f20"></i>
 									</button>
 									<ul class="w160 dropdown-lists">
-										<li class="dropdown-list"><a href="#" class="dropdown-link">View Report</a></li>
-										<li class="dropdown-list"><a href="#" class="dropdown-link">Edit Report</a></li>
-										<li class="dropdown-list"><a href="#" class="dropdown-link">Mark as Done</a></li>
+										<li class="dropdown-list"><button class="btn dropdown-link">View Report</button></li>
+										<li class="dropdown-list"><button class="btn dropdown-link">Edit Report</button></li>
+										<li class="dropdown-list"><button class="btn dropdown-link">Mark as Done</button></li>
 									</ul>
 								</div>
 							</div>
@@ -780,9 +741,9 @@
 										<img src="./Assets/images/walletProfile.jpg" alt="User Profile" class="wallet-user-image" />
 										<span class="user-name">Alan Green</span>
 									</div>
-									<a href="#">
+									<button class="btn">
 										<i class="bx bx-plus add-icon"></i>
-									</a>
+									</button>
 								</div>
 								<div class="wallet-header-text">
 									<h2>Wallet Balance</h2>
