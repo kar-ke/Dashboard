@@ -1,0 +1,25 @@
+
+/* title text styles  */
+.title-xl {
+    font-size: 24px;
+    font-family: var(--font-bold);
+    color: var(--c-white-100)
+}
+
+.title-lg {
+    font-size: 18px;
+    font-family: var(--font-semibold);
+    color: var(--c-white-100)
+}
+
+.title-md {
+    font-size: 16px;
+    font-family: var(--font-semibold);
+    
+    color: var(--c-white-100)
+}
+.title-sm {
+    font-size: 12px;
+    font-family: var(--font-semibold);
+    color: var(--c-white-100)
+}
