@@ -9,21 +9,42 @@
 }
 
 /* notes template  */
-
+.note-card-template{
+    flex: 0 0 16.67%;
+    max-width: 16.67%
+}
 
 .note-card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22%;
     height: 220px;
     padding: 16px;
     background-color: var(--c-blue-200);
-    border-radius: 5px;
+    border-radius: 6px 6px 0 0;
+    border-bottom : 3px solid #4461ed;
 }
 
 .note-content{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.note-title{
+    color: var(--c-blue)
+}
+.note-message{
+    font-size: 15px;
+    color: var(--c-grey-100)
+}
+
+.note-date{
+    font-size: 12px;
+}
+
+.note-footer{
+    display: flex;
+    justify-content: space-between;
+    color: var(--c-blue-600)
 }
