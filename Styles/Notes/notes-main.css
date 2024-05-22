@@ -1,0 +1,29 @@
+.app-notes-container{
+    display: flex;
+    padding: 0 20px;
+}
+
+.notes-container{
+    width: calc(var(--w-full) - var(--w-sidebar));
+    padding: 20px;
+}
+
+/* notes template  */
+
+
+.note-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+    height: 220px;
+    padding: 16px;
+    background-color: var(--c-blue-200);
+    border-radius: 5px;
+}
+
+.note-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

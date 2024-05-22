@@ -5,3 +5,10 @@
     outline: none;
     cursor: pointer;
 }
+
+.add-button{
+    padding: 12px 25px;
+    color: var(--c-white-100);
+    background-color: var(--c-neonblue);
+    border-radius: 5px;
+}

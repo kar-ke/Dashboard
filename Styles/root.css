@@ -9,16 +9,19 @@
 @import url("./button.css");
 @import url("./animation.css");
 @import url("./dropdown.css");
-
-/* header styles  */
 @import url("./Components/PrimaryHeader.css");
 @import url("./Components/SecondaryHeader.css");
-
-/* sidebar  */
 @import url("./Components/Sidebar.css");
 
-/* dashboard  */
+
+/* Dashboard styles  */
 @import url("./Components/Dashboard.css");
+
+
+/* Notes styles */
+@import url("./Notes/notes-main.css");
+@import url("./Notes/notes_sidebar.css");
+
 
 /* responsive styles  */
 @import url("./responsive.css");

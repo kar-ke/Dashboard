@@ -1,0 +1,38 @@
+.notes-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: var(--w-sidebar);
+}
+
+.notes-menu{
+    width: var(--w-full);
+}
+
+.notes-menu-item{
+    width: var(--w-full);
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.notes-menu-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.active.notes-menu-item{
+    background-color: var(--c-blue-200)
+}
+
+.tags-container{
+    width: 100%;
+}
+
+.filter-indicator{
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    margin-right: 6px;
+}
