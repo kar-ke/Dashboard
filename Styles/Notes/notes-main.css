@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0 20px;
     width: calc(var(--w-full));
     overflow-y: auto;
 }
@@ -16,13 +17,14 @@
 .note-card-template{
     flex:0 0 22%;
     width: 22%;
+    height: 240px;
 }
 
 .note-card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: var(--h-full);
+    height: 240px;
     gap: 30px;
     padding: 16px;
     background-color: var(--c-blue-200);
@@ -52,4 +54,30 @@
     display: flex;
     justify-content: space-between;
     color: var(--c-blue-600)
+}
+
+/* input popup styles   */
+.popup-container{
+    width: 30%;
+    height: 35%;
+    padding: 20px;
+    background-color: var(--c-blue-200);
+    border-radius: 6px;
+}
+
+.note-title-field{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--c-blue-100);
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.note-msg-field{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--c-blue-100);
+    border: none;
+    border-radius: 6px;
 }
