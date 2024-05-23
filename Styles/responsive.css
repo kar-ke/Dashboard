@@ -74,9 +74,10 @@
     .col-md-11 { flex: 0 0 91.67%; width: 91.67%; }
     .col-md-12 { flex: 0 0 100%;   width: 100%; }
 
-    .search-bar-container {
+    .search-bar-container, .notes-sidebar {
         display: none;
     }
+    
 }
 
 @media screen and ( max-width: 576px ) { 

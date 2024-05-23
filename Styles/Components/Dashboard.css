@@ -1,7 +1,6 @@
 .main-container{
     width: calc(var(--w-full) - var(--w-sidebar));
     height: calc(var(--h-screen) - var(--h-header)*2);
-    padding-top: 20px;
     margin-left: auto;
     transition: var(--slow-trans) ;
 }
