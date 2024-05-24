@@ -1,6 +1,7 @@
 :root{
 	--h-header : 50px;
 	--w-sidebar : 220px;
+	--w-notes-sidebar : 240px;
 
 	--h-full : 100%;
 	--w-full : 100%;
@@ -8,6 +9,13 @@
 
 	--h-screen : 100vh;
 	--w-screen : 100vw;
+
+
+	/* z-index layers  */
+	--layer-1 : 1;
+	--layer-2 : 10;
+	--layer-3 : 20;
+	--layer-4 : 30;
 }
 
 * {

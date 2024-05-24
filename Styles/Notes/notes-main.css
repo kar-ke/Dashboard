@@ -1,6 +1,5 @@
 .app-notes-container{
     display: flex;
-    height: calc(var(--h-screen) - var(--h-header)*2);
     padding-top: 20px;
 }
 
@@ -8,20 +7,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    width: var(--w-full);
     padding: 0 20px;
-    width: calc(var(--w-full));
     overflow-y: auto;
 }
 
+
+
 /* notes template  */
-.note-card-template{
-    flex:0 0 22%;
-    width: 22%;
-    height: 240px;
-}
 
 .note-card{
+    flex:0 0 22%;
     display: flex;
+    width: 22%;
     flex-direction: column;
     justify-content: space-between;
     height: 240px;
@@ -29,7 +27,22 @@
     padding: 16px;
     background-color: var(--c-blue-200);
     border-radius: 6px 6px 0 0;
-    border-bottom : 3px solid #4461ed;
+}
+
+.note-card[data-filter="personal"] {
+    border-bottom: 4px solid var(--c-neonblue);
+}
+
+.note-card[data-filter="work"] {
+    border-bottom: 4px solid var(--c-green);
+}
+
+.note-card[data-filter="social"] {
+    border-bottom: 4px solid  var(--c-yellow);
+}
+
+.note-card[data-filter="important"] {
+    border-bottom: 4px solid var(--c-red);
 }
 
 .note-content{
@@ -38,10 +51,10 @@
     gap: 5px;
 }
 
-.note-title{
+.note-title-text{
     color: var(--c-blue)
 }
-.note-message{
+.note-message-text{
     font-size: 15px;
     color: var(--c-grey-100)
 }
@@ -56,28 +69,84 @@
     color: var(--c-blue-600)
 }
 
+.favourite-btn.selected{
+    color: var(--c-yellow);
+}
 /* input popup styles   */
+
+.overlay{
+    width: var(--w-full);
+    height: var(--h-full);
+    transition: var(--default-trans);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: var(--layer-2);
+}
+
+.overlay.popup-trigger{
+    visibility: visible;
+    opacity: 1;
+}
+
 .popup-container{
-    width: 30%;
-    height: 35%;
-    padding: 20px;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 40px 20px 20px 20px;
     background-color: var(--c-blue-200);
+    transition: var(--default-trans);
     border-radius: 6px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: var(--layer-2);
+
 }
 
-.note-title-field{
+.overlay.popup-trigger .popup-container{
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.note-title{
     width: 100%;
-    padding: 15px 10px;
+    padding: 15px 20px;
+    color: var(--c-blue);
     background-color: var(--c-blue-100);
     border: none;
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.note-msg-field{
+.note-description{
     width: 100%;
-    padding: 15px 10px;
+    height: 100px;
+    padding: 15px 20px;
+    color: var(--c-grey);
+    font-family: inherit;
     background-color: var(--c-blue-100);
     border: none;
+    resize: none;
     border-radius: 6px;
+}
+
+.note-title:focus, .note-description:focus{
+    outline: 1px solid var(--c-blue-500);
+}
+
+.note-title::placeholder, .note-description::placeholder{
+	color: var(--c-grey);
+    font-family: var(--font-regular);
+}
+
+
+.popup-footer{
+    text-align: end;
 }

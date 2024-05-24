@@ -3,49 +3,49 @@
     <!-- Notes sidebar  -->
     <aside class="notes-sidebar">
         <div>
-            <button class="btn add-button">Add</button>
+            <button class="btn add-button open-popup">Add</button>
         </div>
         <ul class="notes-menu">
-            <li  class="active notes-menu-item">
-                <button class="btn notes-menu-link">
+            <li class="filter active" data-type="all">
+                <button class="btn notes-menu-link" >
                     <i class='bx bxs-edit f16'></i>
                     <span>All Notes</span>
                 </button>
             </li>
-            <li class="notes-menu-item">
-                <button class="btn notes-menu-link">
+            <li class="filter" data-type="favourite">
+                <button class="btn notes-menu-link" >
                     <i class='bx bx-star f16'></i>
                     <span>Favourites</span>
                 </button>
             </li>
         </ul>
         <ul class="notes-menu">
-            <li class="notes-menu-item">
+            <li class="filter mb10">
                 <div class="notes-menu-link">
                     <i class='bx bx-purchase-tag f20'></i>
                     <span class="f18">Tags</span>
                 </div>
             </li>
-            <li class="notes-menu-item">
-                <button class="btn notes-menu-link">
+            <li class="filter" data-type="personal">
+                <button class="btn notes-menu-link" >
                     <span class="filter-indicator bg-c-blue"></span>
                     <p>Personal</p>
                 </button>
             </li>
-            <li class="notes-menu-item">
+            <li class="filter"  data-type="work">
                 <button class="btn notes-menu-link">
                     <span class="filter-indicator bg-c-green"></span>
                     <p>Work</p>
                 </button>
             </li>
-            <li class="notes-menu-item">
-                <button class="btn notes-menu-link">
+            <li class="filter" data-type="social">
+                <button class="btn notes-menu-link" >
                     <span class="filter-indicator bg-c-yellow"></span>
                     <p>Social</p>
                 </button>
             </li>
-            <li class="notes-menu-item">
-                <button class="btn notes-menu-link">
+            <li class="filter" data-type="important">
+                <button class="btn notes-menu-link" >
                     <span class="filter-indicator bg-c-red"></span>
                     <p>Important</p>
                 </button>
@@ -55,28 +55,26 @@
 
     <!-- note card template  -->
     <template class="note-template">
-        <div class="notes-container">
-            <div class="note-card-template col-xl-5 col-sm-12">
-                <div class="note-card">
+                <div class="note-card col-xxl-4 col-xl-5 col-sm-12">
                     <div class="note-content">
-                        <p class="title-md note-title">Meeting with kelly</p>
+                        <p class="title-md note-title-text">Meeting with kelly</p>
                         <time class="note-date">11/01/2020</time>
                         <div>
-                            <p class="note-message mt10">Curabitur facilisis vel elit sed dapibus sodales purus rhoncus.</p>
+                            <p class="note-message-text mt10">Curabitur facilisis vel elit sed dapibus sodales purus rhoncus.</p>
                         </div>
                     </div>
                     <div class="note-footer">
                         <div>
-                            <button class="btn">
+                            <button class="btn favourite-btn" data-name="favourite">
                                 <i class='bx bx-star f20'></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn  delete-btn">
                                 <i class='bx bx-trash f20'></i>
                             </button>	
                         </div>
                         <div class="dropdown-container relative">
                             <button class="btn btn-action">
-                                <i class='bx bx-dots-vertical-rounded f20' ></i>
+                                <i class='bx bx-dots-vertical-rounded f20'></i>
                             </button>
                             <ul class="dropdown-lists w140">
                                 <li class="dropdown-list">
@@ -107,18 +105,29 @@
                         </div>
                         
                     </div>
-                </div>		
-            </div>
-        </div>    
+                </div>	
     </template>
     
     <!-- Notes container  -->
     <section class="notes-container">
-        <div >Oops !! no cards yet. </div>
+        <div class="no-card-message">Oops !! no cards yet. </div>
     </section>
 
     <!-- input form popup  -->
-    <div>
-        
+    <div class="overlay">
+        <div class="popup-container col-xl-5 col-md-8 col-sm-11">
+            <button class="btn popup-close-button">
+                <i class='bx bx-x f25'></i>
+            </button>
+            <form>
+                <input class="note-title" placeholder="Title" type="text" maxlength="20">
+                <textarea class="note-description" placeholder="Description"  maxlength="80"></textarea>
+                <div class="popup-footer">
+                    <button class="btn popup-button discard-note" type="button">Discard</button>
+                    <button class="btn popup-button add-note" type="button">Add</button>
+                </div>
+            </form>
+        </div>
     </div>
+    
 </div>

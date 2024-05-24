@@ -4,26 +4,26 @@
     align-items: center;
     gap: 40px;
     margin: 0 30px;
-    width: 240px;
+    width: var(--w-notes-sidebar);
 }
 
 .notes-menu{
     width: var(--w-full);
 }
 
-.notes-menu-item{
-    width: var(--w-full);
-    padding: 12px 20px;
-    border-radius: 5px;
-}
 
 .notes-menu-link{
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 0 0 0 20px;
+    transition: var(--fast-trans);
 }
 
-.active.notes-menu-item{
+.filter.active{
+    border-radius: 5px;
     background-color: var(--c-blue-200)
 }
 
