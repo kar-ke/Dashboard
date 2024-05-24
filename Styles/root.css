@@ -19,8 +19,7 @@
 
 
 /* Notes styles */
-@import url("./Notes/notes-main.css");
-@import url("./Notes/notes_sidebar.css");
+@import url("./Components/Notes.css");
 
 
 /* responsive styles  */

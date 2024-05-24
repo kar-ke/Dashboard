@@ -1,133 +1,132 @@
 <div class="app-notes-container">
 
-    <!-- Notes sidebar  -->
-    <aside class="notes-sidebar">
-        <div>
-            <button class="btn add-button open-popup">Add</button>
-        </div>
-        <ul class="notes-menu">
-            <li class="filter active" data-type="all">
-                <button class="btn notes-menu-link" >
-                    <i class='bx bxs-edit f16'></i>
-                    <span>All Notes</span>
-                </button>
-            </li>
-            <li class="filter" data-type="favourite">
-                <button class="btn notes-menu-link" >
-                    <i class='bx bx-star f16'></i>
-                    <span>Favourites</span>
-                </button>
-            </li>
-        </ul>
-        <ul class="notes-menu">
-            <li class="filter mb10">
-                <div class="notes-menu-link">
-                    <i class='bx bx-purchase-tag f20'></i>
-                    <span class="f18">Tags</span>
-                </div>
-            </li>
-            <li class="filter" data-type="personal">
-                <button class="btn notes-menu-link" >
-                    <span class="filter-indicator bg-c-blue"></span>
-                    <p>Personal</p>
-                </button>
-            </li>
-            <li class="filter"  data-type="work">
-                <button class="btn notes-menu-link">
-                    <span class="filter-indicator bg-c-green"></span>
-                    <p>Work</p>
-                </button>
-            </li>
-            <li class="filter" data-type="social">
-                <button class="btn notes-menu-link" >
-                    <span class="filter-indicator bg-c-yellow"></span>
-                    <p>Social</p>
-                </button>
-            </li>
-            <li class="filter" data-type="important">
-                <button class="btn notes-menu-link" >
-                    <span class="filter-indicator bg-c-red"></span>
-                    <p>Important</p>
-                </button>
-            </li>
-        </ul>
-    </aside>
+	<!-- Notes sidebar  -->
+	<aside class="notes-sidebar">
+		<div>
+			<button class="btn add-button open-popup">Add</button>
+		</div>
+		<ul class="notes-menu">
+			<li class="filter active" data-type="all">
+				<button class="btn notes-menu-link">
+					<i class="bx bxs-edit f16"></i>
+					<span>All Notes</span>
+				</button>
+			</li>
+			<li class="filter" data-type="favourite">
+				<button class="btn notes-menu-link">
+					<i class="bx bx-star f16"></i>
+					<span>Favourites</span>
+				</button>
+			</li>
+		</ul>
+		<ul class="notes-menu">
+			<li class="filter mb10">
+				<div class="notes-menu-link">
+					<i class="bx bx-purchase-tag f20"></i>
+					<span class="f18">Tags</span>
+				</div>
+			</li>
+			<li class="filter" data-type="personal">
+				<button class="btn notes-menu-link">
+					<span class="filter-indicator bg-c-blue"></span>
+					<p>Personal</p>
+				</button>
+			</li>
+			<li class="filter" data-type="work">
+				<button class="btn notes-menu-link">
+					<span class="filter-indicator bg-c-green"></span>
+					<p>Work</p>
+				</button>
+			</li>
+			<li class="filter" data-type="social">
+				<button class="btn notes-menu-link">
+					<span class="filter-indicator bg-c-yellow"></span>
+					<p>Social</p>
+				</button>
+			</li>
+			<li class="filter" data-type="important">
+				<button class="btn notes-menu-link">
+					<span class="filter-indicator bg-c-red"></span>
+					<p>Important</p>
+				</button>
+			</li>
+		</ul>
+	</aside>
 
-    <!-- note card template  -->
-    <template class="note-template">
-                <div class="note-card col-xxl-4 col-xl-5 col-sm-12">
-                    <div class="note-content">
-                        <p class="title-md note-title-text">Meeting with kelly</p>
-                        <time class="note-date">11/01/2020</time>
-                        <div>
-                            <p class="note-message-text mt10">Curabitur facilisis vel elit sed dapibus sodales purus rhoncus.</p>
-                        </div>
-                    </div>
-                    <div class="note-footer">
-                        <div>
-                            <button class="btn favourite-btn" data-name="favourite">
-                                <i class='bx bx-star f20'></i>
-                            </button>
-                            <button class="btn  delete-btn">
-                                <i class='bx bx-trash f20'></i>
-                            </button>	
-                        </div>
-                        <div class="dropdown-container relative">
-                            <button class="btn btn-action">
-                                <i class='bx bx-dots-vertical-rounded f20'></i>
-                            </button>
-                            <ul class="dropdown-lists w140">
-                                <li class="dropdown-list">
-                                    <a class="dropdown-link" href="#" data-name="personal">
-                                        <span class="filter-indicator bg-c-blue"></span>
-                                        <span>Personal</span>
-                                    </a>
-                                </li>
-                                <li class="dropdown-list">
-                                    <a class="dropdown-link" href="#" data-name="work">
-                                        <span class="filter-indicator bg-c-green"></span>
-                                        <span>Work</span>
-                                    </a>
-                                </li>
-                                <li class="dropdown-list">
-                                    <a class="dropdown-link" href="#" data-name="social">
-                                        <span class="filter-indicator bg-c-yellow"></span>
-                                        <span>Social</span>
-                                    </a>
-                                </li>
-                                <li class="dropdown-list">
-                                    <a class="dropdown-link" href="#" data-name="important">
-                                        <span class="filter-indicator bg-c-red"></span>
-                                        <span>Important</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>	
-    </template>
-    
-    <!-- Notes container  -->
-    <section class="notes-container">
-        <div class="no-card-message">Oops !! no cards yet. </div>
-    </section>
+	<!-- note card template  -->
+	<template class="note-template">
+		<div class="note-card col-xxl-4 col-xl-5 col-sm-12">
+			<div class="note-content">
+				<p class="note-title-text title-md c-sky-blue">Meeting with kelly</p>
+				<time class="f10">11/01/2020</time>
+				<div>
+					<p class="note-message-text mt10">Curabitur facilisis vel elit sed dapibus sodales purus rhoncus.</p>
+				</div>
+			</div>
+			<div class="note-footer">
+				<div>
+					<button class="btn favourite-btn" data-name="favourite">
+						<i class="bx bx-star f20"></i>
+					</button>
+					<button class="btn delete-btn">
+						<i class="bx bx-trash f20"></i>
+					</button>
+				</div>
+				<div class="dropdown-container relative">
+					<button class="btn btn-action">
+						<i class="bx bx-dots-vertical-rounded f20"></i>
+					</button>
+					<ul class="dropdown-lists w140">
+						<li class="dropdown-list">
+							<a class="dropdown-link" href="#" data-name="personal">
+								<span class="filter-indicator bg-c-blue"></span>
+								<span>Personal</span>
+							</a>
+						</li>
+						<li class="dropdown-list">
+							<a class="dropdown-link" href="#" data-name="work">
+								<span class="filter-indicator bg-c-green"></span>
+								<span>Work</span>
+							</a>
+						</li>
+						<li class="dropdown-list">
+							<a class="dropdown-link" href="#" data-name="social">
+								<span class="filter-indicator bg-c-yellow"></span>
+								<span>Social</span>
+							</a>
+						</li>
+						<li class="dropdown-list">
+							<a class="dropdown-link" href="#" data-name="important">
+								<span class="filter-indicator bg-c-red"></span>
+								<span>Important</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</template>
 
-    <!-- input form popup  -->
-    <div class="overlay">
-        <div class="popup-container col-xl-5 col-md-8 col-sm-11">
-            <button class="btn popup-close-button">
-                <i class='bx bx-x f25'></i>
-            </button>
-            <form>
-                <input class="note-title" placeholder="Title" type="text" maxlength="20">
-                <textarea class="note-description" placeholder="Description"  maxlength="80"></textarea>
-                <div class="popup-footer">
-                    <button class="btn popup-button discard-note" type="button">Discard</button>
-                    <button class="btn popup-button add-note" type="button">Add</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    
+	<!-- Notes container  -->
+	<section class="notes-container">
+		<div class="no-card-message">Oops !! no cards yet.</div>
+	</section>
+
+	<!-- input form popup  -->
+	<div class="overlay">
+		<div class="popup-container col-xl-5 col-md-8 col-sm-11">
+			<button class="btn popup-close-button">
+				<i class="bx bx-x f25"></i>
+			</button>
+			<form>
+				<input class="note-title" placeholder="Title" type="text" maxlength="20" />
+				<textarea class="note-description" placeholder="Description" maxlength="80"></textarea>
+				<div class="popup-footer">
+					<button class="btn popup-button discard-note" type="button">Discard</button>
+					<button class="btn popup-button add-note" type="button">Add</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
 </div>

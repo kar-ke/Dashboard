@@ -6,7 +6,6 @@
     cursor: pointer;
 }
 
-
 /* add notes button  */
 .add-button{
     padding: 12px 25px;
@@ -17,18 +16,18 @@
 
 /* popup buttons  */
 .popup-close-button{
+    background-color: var(--c-blue-100);
+    color:var(--c-green);
+    border-radius: 4px;
     position: absolute;
     top: -10px;
     right: -10px;
-    border-radius: 4px;
-    color:var(--c-green);
-    background-color: var(--c-blue-100)
 }
 
 .popup-button{
     padding: 10px 22px;
-    color: var(--c-white-100);
     background-color: var(--c-neonblue);
+    color: var(--c-white-100);
     border-radius: 4px;
     margin: 10px 0 0 6px;
 }
