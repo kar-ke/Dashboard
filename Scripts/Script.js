@@ -31,6 +31,7 @@ function navigateTo(page) {
 };
 
 
+// add new card button function 
 function addCard() {
 
     const template = $(".note-template")
