@@ -21,6 +21,9 @@
 /* Notes styles */
 @import url("./Components/Notes.css");
 
+/* chatapp styles  */
+@import url("./Components/Chatapp.css");
+
 
 /* responsive styles  */
 @import url("./responsive.css");

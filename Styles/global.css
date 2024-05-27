@@ -10,6 +10,8 @@
 	--h-screen : 100vh;
 	--w-screen : 100vw;
 
+	/* chatapp primary values  */
+	--w-chatapp-sidebar: 40%;
 
 	/* z-index layers  */
 	--layer-1 : 1;
