@@ -10,8 +10,10 @@
 	--h-screen : 100vh;
 	--w-screen : 100vw;
 
-	/* chatapp primary values  */
+	/* chatapp values  */
 	--w-chatapp-sidebar: 40%;
+	--h-chatapp-searchbar: 50px;
+	--h-chatapp-footer : 40px;
 
 	/* z-index layers  */
 	--layer-1 : 1;
