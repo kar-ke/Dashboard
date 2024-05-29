@@ -37,7 +37,7 @@ body {
 }
 
 ul li { list-style: none; list-style-type: none; }
-a { text-decoration: none; }
+a { color: var(--c-grey); text-decoration: none; }
 a:hover { cursor: pointer; }
 
 

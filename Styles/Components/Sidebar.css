@@ -54,3 +54,32 @@
 .sidebar-container.sidebar-close{
     left: -230px;
 }
+
+
+/* accordian  */
+
+.accordian .submenu {
+    display: none; 
+}
+
+.submenu-item{
+    padding: 12px;
+}
+
+.submenu-item:hover{
+    color: var(--c-white-100);
+    background-color: var(--c-blue-400);
+    border-radius: 5px;
+}
+
+.submenu-link{
+    margin-left: 28px;
+}
+.submenu-link::before{
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    border: 3px solid var(--c-blue);
+    border-radius: var(--br-full);
+    vertical-align: middle;
+}
