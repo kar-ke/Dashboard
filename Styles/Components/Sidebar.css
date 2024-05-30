@@ -58,8 +58,14 @@
 
 /* accordian  */
 
+
+
 .accordian .submenu {
-    display: none; 
+    display: none;
+}
+
+.accordian.active .submenu {
+    display: block;
 }
 
 .submenu-item{

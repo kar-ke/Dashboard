@@ -11,6 +11,10 @@ $(document).ready(function() {
         $(this).parents('.dropdown-container').toggleClass('open_dropdown');
     });
 
+    // accordian 
+    $('.accordian').click(function () {
+        $(this).find('.submenu').slideToggle();
+    })
 })
 
 
