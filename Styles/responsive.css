@@ -49,9 +49,6 @@
     .col-lg-11 { flex: 0 0 91.67%; width: 91.67%; }
     .col-lg12 { flex: 0 0 100%;   width: 100%; }
 
-    .sidebar-container{
-        left: -230px;
-    }
 
     .main-container{
         width: 100%;

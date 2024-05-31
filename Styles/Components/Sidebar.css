@@ -2,11 +2,17 @@
     width: var(--w-sidebar);
     height: calc(100vh - var(--h-header)*2);
     padding: 18px;
+    background-color: var(--c-primary);
     border-right: 1px  solid var(--c-blue-200);
     position: fixed;
     left: 0;
     overflow-y: auto;
     transition: var(--slow-trans);
+    z-index: 1;
+}
+
+.sidebar-container.sidebar-close{
+    left: -230px;
 }
 
 .sidebar-menu-item{
@@ -51,9 +57,6 @@
     margin-left: auto;
 }
 
-.sidebar-container.sidebar-close{
-    left: -230px;
-}
 
 
 /* accordian  */
