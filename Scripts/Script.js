@@ -14,7 +14,8 @@ $(document).ready(function() {
     // accordian 
     $('.accordian').click(function () {
         $(this).find('.submenu').slideToggle();
-    })
+        $(this).find('.sidebar-arrow').toggleClass('rotate-arrow');
+    });
 })
 
 

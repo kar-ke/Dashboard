@@ -24,9 +24,10 @@
     margin-bottom: 4px;
     color: var(--c-blue-500);
     overflow: hidden;
+    transition: var(--default-trans);
 }
 
-.active .sidebar-menu-item{
+.sidebar-menu-item.active{
     color: var(--c-white-100);
     background-color: var(--c-blue-600);
     border-radius: 5px;
@@ -55,8 +56,12 @@
 .sidebar-arrow{
     font-size: 20px;
     margin-left: auto;
+    transition: var(--default-trans);
 }
 
+.rotate-arrow{
+    transform: rotate(90deg);
+}
 
 
 /* accordian  */
@@ -67,18 +72,12 @@
     display: none;
 }
 
-.accordian.active .submenu {
-    display: block;
-}
-
 .submenu-item{
     padding: 12px;
 }
 
-.submenu-item:hover{
-    color: var(--c-white-100);
-    background-color: var(--c-blue-400);
-    border-radius: 5px;
+.submenu-item:hover  .submenu-link{
+    color: var(--c-blue);
 }
 
 .submenu-link{
@@ -88,7 +87,7 @@
     display: inline-block;
     content: "";
     margin-right: 10px;
-    border: 3px solid var(--c-blue);
+    border: 3px solid ;
     border-radius: var(--br-full);
     vertical-align: middle;
 }
