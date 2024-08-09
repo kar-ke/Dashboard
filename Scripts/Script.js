@@ -7,7 +7,14 @@ $(document).ready(function() {
     });
 
     // Dropdown handler
-    $('.btn-action').click(function() {
+    const dropdowns = document.querySelectorAll('.btn-action');
+
+    $('.btn-action').click(function () {
+        dropdowns.forEach((dropdown) => {
+            if (dropdown !== this && dropdown.parentElement.classList.contains('open_dropdown')) {
+                dropdown.parentElement.classList.remove('open_dropdown')
+            };
+        });
         $(this).parents('.dropdown-container').toggleClass('open_dropdown');
     });
 
@@ -114,5 +121,3 @@ function addCard() {
         });
     });
 };
-
-// this comment is for a empty git PushManager, cause simply i dont want to break my git streak 
